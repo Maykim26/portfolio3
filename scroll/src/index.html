@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="./package/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/font.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/main.js"></script>
+
+    <!-- AOS 라이브러리 불러오기-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header_inner">
+        <div class="h1_wrap">
+          <h1>
+            <a
+              href="#"
+              class="ir_pm"
+              >portfolio</a
+            >
+          </h1>
+        </div>
+        <nav>
+          <div class="nav_wrap">
+            <div class="nav_inner">
+              <h2 class="screen_out">menu</h2>
+              <ul class="nav_list">
+                <li><a href="#visual">portfolio</a></li>
+
+                <li><a href="#about">About me</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#clone">Clone coding</a></li>
+                <li><a href="#contact">Contact me</a></li>
+              </ul>
+            </div>
+            <button
+              class="m_btn"
+              type="button"
+            >
+              <span class="ir_pm">메뉴 열기 버튼</span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="modal"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- menuArea -->
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div
+          id="visual"
+          class="swiper-slide"
+        >
+          <div class="section_in">
+            <svg
+              class="blob"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 500 500"
+              width="50%"
+              id="blobSvg"
+              filter="blur(50px)"
+              style="translate: 50vw, 50vh !important"
+            >
+              <defs>
+                <linearGradient
+                  id="gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="0%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: rgb(255, 64, 255)"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    style="stop-color: rgb(64, 101, 255)"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <path
+                id="blob"
+                fill="url(#gradient)"
+                style="opacity: 0.3"
+              >
+                <animate
+                  attributeName="d"
+                  dur="10s"
+                  repeatCount="indefinite"
+                  values="M451.77435,331.68776Q380.0333,413.37552,297.8522,408.1811Q215.67111,402.98668,163.20108,360.14446Q110.73105,317.30225,116.40549,253.17111Q122.07993,189.03996,169.7144,146.88551Q217.34887,104.73105,314.55328,76.47669Q411.75769,48.22232,467.63654,149.11116Q523.51539,250,451.77435,331.68776Z;M390.7302,319.10952Q360.37524,388.21905,284.62068,409.39959Q208.86612,430.58014,161.11156,373.20082Q113.35701,315.8215,88.46857,238.04463Q63.58014,160.26776,136.76776,117.04463Q209.95537,73.8215,303.79007,69.52027Q397.62476,65.21905,409.35497,157.60952Q421.08517,250,390.7302,319.10952Z;M429.79847,339.54154Q392.67727,429.08308,294.97368,455.00137Q197.27008,480.91966,143.94598,403.56786Q90.62188,326.21607,83.52769,246.22992Q76.43351,166.24376,136.8518,92.77008Q197.27008,19.29641,287.1482,55Q377.02632,90.70359,421.97299,170.3518Q466.91966,250,429.79847,339.54154Z;M388.67097,319.27849Q360.55699,388.55699,291.23441,379.72688Q221.91183,370.89678,145.00645,354.28387Q68.10108,337.67097,71.32903,251.33548Q74.55699,165,142.39247,119.95591Q210.22796,74.91183,286.12043,91.61398Q362.0129,108.31613,389.39892,179.15806Q416.78495,250,388.67097,319.27849Z;M392.2525,331.53996Q379.05994,413.07992,285.7525,456.15485Q192.44505,499.22978,100.80019,432.44731Q9.15533,365.66484,30.81018,260.57493Q52.46503,155.48501,121.45005,74.10764Q190.43506,-7.26974,268.13261,60.97003Q345.83016,129.2098,375.63761,189.6049Q405.44505,250,392.2525,331.53996Z;M411.71818,339.87391Q393.61186,429.74783,302.23794,426.16285Q210.86403,422.57787,122.32727,388.31581Q33.79051,354.05375,61.55534,263.35692Q89.32016,172.66008,145.95613,107.46324Q202.59209,42.2664,289.95613,66.5581Q377.32016,90.8498,403.57233,170.4249Q429.82451,250,411.71818,339.87391Z;M384.02639,318.52969Q359.04619,387.05939,278.02474,435.01815Q197.0033,482.97691,137.94391,408.01485Q78.88453,333.05279,75.91422,249.0132Q72.94391,164.97361,138.46041,107.43731Q203.97691,49.90102,276.0132,88.41917Q348.04949,126.93731,378.52804,188.46866Q409.0066,250,384.02639,318.52969Z;M420.7122,331.4339Q380.09423,412.86779,301.16508,392.29219Q222.23594,371.7166,157.11322,349.24982Q91.99051,326.78305,53.64135,232.38203Q15.29219,137.98101,118.09898,129.47187Q220.90577,120.96273,294.67458,111.25967Q368.44339,101.55661,414.88678,175.77831Q461.33017,250,420.7122,331.4339Z;M400,314Q352,378,277,420Q202,462,143,396Q84,330,66.5,241.5Q49,153,125.5,97.5Q202,42,298.5,55Q395,68,421.5,159Q448,250,400,314Z;M451.77435,331.68776Q380.0333,413.37552,297.8522,408.1811Q215.67111,402.98668,163.20108,360.14446Q110.73105,317.30225,116.40549,253.17111Q122.07993,189.03996,169.7144,146.88551Q217.34887,104.73105,314.55328,76.47669Q411.75769,48.22232,467.63654,149.11116Q523.51539,250,451.77435,331.68776Z"
+                ></animate>
+              </path>
+            </svg>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+            <script>
+              // 마우스 포인터 blob
+              gsap.set('#blobSvg', { xPercent: -50, yPercent: -50 });
+
+              var cursor = document.querySelector('#blobSvg');
+
+              var mouseX;
+              var mouseY;
+
+              window.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+
+                gsap.to(cursor, 3, { x: mouseX, y: mouseY });
+                // 속도 조절값
+              });
+            </script>
+            <h1
+              class="title"
+              data-aos="zoom-in-down"
+            >
+              { 성장하는 }, <br />웹 퍼블리셔 김명희
+            </h1>
+          </div>
+        </div>
+
+        <div
+          id="about"
+          class="swiper-slide"
+        >
+          <div class="section_in">
+            <svg
+              class="blob"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 500 500"
+              width="45%"
+              id="blobSvg"
+              filter="blur(50px)"
+              style="translate: 50vw, 50vh !important"
+            >
+              <defs>
+                <linearGradient
+                  id="gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="0%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: rgb(255, 64, 255)"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    style="stop-color: rgb(64, 101, 255)"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <path
+                id="blob"
+                fill="url(#gradient)"
+                style="opacity: 0.2"
+              >
+                <animate
+                  attributeName="d"
+                  dur="10s"
+                  repeatCount="indefinite"
+                  values="M451.77435,331.68776Q380.0333,413.37552,297.8522,408.1811Q215.67111,402.98668,163.20108,360.14446Q110.73105,317.30225,116.40549,253.17111Q122.07993,189.03996,169.7144,146.88551Q217.34887,104.73105,314.55328,76.47669Q411.75769,48.22232,467.63654,149.11116Q523.51539,250,451.77435,331.68776Z;M390.7302,319.10952Q360.37524,388.21905,284.62068,409.39959Q208.86612,430.58014,161.11156,373.20082Q113.35701,315.8215,88.46857,238.04463Q63.58014,160.26776,136.76776,117.04463Q209.95537,73.8215,303.79007,69.52027Q397.62476,65.21905,409.35497,157.60952Q421.08517,250,390.7302,319.10952Z;M429.79847,339.54154Q392.67727,429.08308,294.97368,455.00137Q197.27008,480.91966,143.94598,403.56786Q90.62188,326.21607,83.52769,246.22992Q76.43351,166.24376,136.8518,92.77008Q197.27008,19.29641,287.1482,55Q377.02632,90.70359,421.97299,170.3518Q466.91966,250,429.79847,339.54154Z;M388.67097,319.27849Q360.55699,388.55699,291.23441,379.72688Q221.91183,370.89678,145.00645,354.28387Q68.10108,337.67097,71.32903,251.33548Q74.55699,165,142.39247,119.95591Q210.22796,74.91183,286.12043,91.61398Q362.0129,108.31613,389.39892,179.15806Q416.78495,250,388.67097,319.27849Z;M392.2525,331.53996Q379.05994,413.07992,285.7525,456.15485Q192.44505,499.22978,100.80019,432.44731Q9.15533,365.66484,30.81018,260.57493Q52.46503,155.48501,121.45005,74.10764Q190.43506,-7.26974,268.13261,60.97003Q345.83016,129.2098,375.63761,189.6049Q405.44505,250,392.2525,331.53996Z;M411.71818,339.87391Q393.61186,429.74783,302.23794,426.16285Q210.86403,422.57787,122.32727,388.31581Q33.79051,354.05375,61.55534,263.35692Q89.32016,172.66008,145.95613,107.46324Q202.59209,42.2664,289.95613,66.5581Q377.32016,90.8498,403.57233,170.4249Q429.82451,250,411.71818,339.87391Z;M384.02639,318.52969Q359.04619,387.05939,278.02474,435.01815Q197.0033,482.97691,137.94391,408.01485Q78.88453,333.05279,75.91422,249.0132Q72.94391,164.97361,138.46041,107.43731Q203.97691,49.90102,276.0132,88.41917Q348.04949,126.93731,378.52804,188.46866Q409.0066,250,384.02639,318.52969Z;M420.7122,331.4339Q380.09423,412.86779,301.16508,392.29219Q222.23594,371.7166,157.11322,349.24982Q91.99051,326.78305,53.64135,232.38203Q15.29219,137.98101,118.09898,129.47187Q220.90577,120.96273,294.67458,111.25967Q368.44339,101.55661,414.88678,175.77831Q461.33017,250,420.7122,331.4339Z;M400,314Q352,378,277,420Q202,462,143,396Q84,330,66.5,241.5Q49,153,125.5,97.5Q202,42,298.5,55Q395,68,421.5,159Q448,250,400,314Z;M451.77435,331.68776Q380.0333,413.37552,297.8522,408.1811Q215.67111,402.98668,163.20108,360.14446Q110.73105,317.30225,116.40549,253.17111Q122.07993,189.03996,169.7144,146.88551Q217.34887,104.73105,314.55328,76.47669Q411.75769,48.22232,467.63654,149.11116Q523.51539,250,451.77435,331.68776Z"
+                ></animate>
+              </path>
+            </svg>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+            <script>
+              // 마우스 포인터 blob
+              gsap.set('#blobSvg', { xPercent: -50, yPercent: -50 });
+
+              var cursor = document.querySelector('#blobSvg');
+
+              var mouseX;
+              var mouseY;
+
+              window.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+
+                gsap.to(cursor, 1, { x: mouseX, y: mouseY });
+                // 속도 조절값
+              });
+            </script>
+            <div class="about_left">
+              <h2 class="about">About me</h2>
+              <span>"웹을 더 비주얼하게, 사용자를 더 편안하게."</span>
+              <p>
+                안녕하세요! 신입 웹 퍼블리셔 김명희입니다.
+                <br />
+
+                웹의 매력과 무한한 가능성에 끊임없이 빠져 있는
+                <br />
+
+                열정적인 웹 퍼블리셔입니다.
+                <br />
+                <br />
+                포용적이고 열린 소통을 중요하게 생각합니다. 고객, 동료,
+                디자이너와의 원활한 협력을 통해 프로젝트를 완성하도록 최선을
+                다하겠습니다.
+
+                <br />
+                <br />
+                웹 퍼블리셔로서, 저의 목표는 항상 최신 기술과 웹 표준을 따르면서
+                창의적이고 혁신적인 웹사이트를 만드는 것입니다.
+
+                <br />
+                <br />
+                저는 웹을 통해 세상을 연결하고 더 나은 미래를 만들기 위해
+                <br />
+
+                끊임없이 노력하는 웹 퍼블리셔입니다. 감사합니다!
+              </p>
+              <a href="./이력서.pdf"><b>이력서 보기</b></a>
+            </div>
+            <div class="about_right">
+              <div class="photo"><p class="screen_out">photo</p></div>
+            </div>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+          var mySwiper = new Swiper('.swiper-container', {
+            // Swiper 구성 옵션을 여기에 추가합니다.
+          });
+
+          // 슬라이드 변경 이벤트 리스너 추가
+          mySwiper.on('slideChange', function () {
+            // 슬라이드 변경 시 애니메이션을 트리거합니다.
+            gsap.to('.about_left', {
+              duration: 1.5, // 애니메이션 지속 시간(초)
+              x: -900, // 최종 위치 (x축)
+              y: -900, // 최종 위치 (y축)
+              opacity: 1, // 최종 투명도
+              ease: 'power2.out', // easing 효과
+            });
+          });
+        </script>
+
+        <div
+          id="project"
+          class="swiper-slide"
+        >
+          <div class="section_in">
+            <div class="aesop">
+              <div class="mockup"></div>
+              <div class="textarea">
+                <h2>project</h2>
+                <h1>aesop</h1>
+                <table class="aesop_table">
+                  <tr>
+                    <th scope="col">TYPE</th>
+                    <td>Responsive Web</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">PAGE</th>
+                    <td>Main + Sub1,2</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">TOOL</th>
+                    <td>Photoshop, HTML, CSS, JS</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">PROCESS</th>
+                    <td>Swiper js, scroll event</td>
+                  </tr>
+                  <tr class="test">
+                    <th scope="col">참여도</th>
+                    <td>디자인, 퍼블리싱 100%</td>
+                  </tr>
+                </table>
+                <a href="http://aesopmh.dothome.co.kr/Aesop/">Website</a>
+              </div>
+            </div>
+            <div class="cjw">
+              <div class="mockup"></div>
+              <div class="textarea">
+                <h2>project</h2>
+                <h1>cjw</h1>
+                <table class="cjw_table">
+                  <tr>
+                    <th scope="col">TYPE</th>
+                    <td>Responsive Web</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">PAGE</th>
+                    <td>Main Page</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">TOOL</th>
+                    <td>Photoshop, HTML, CSS, JS</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">PROCESS</th>
+                    <td>Swiper js, scroll event</td>
+                  </tr>
+                  <tr class="test">
+                    <th scope="col">참여도</th>
+                    <td>퍼블리싱 100%</td>
+                  </tr>
+                </table>
+                <a href="#">Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="clone"
+          class="swiper-slide"
+        >
+          <div class="blur">
+            <div class="section_in">
+              <h2>Clone Coding</h2>
+              <ul class="site_area slick-slide">
+                <li class="s01"><h3 class="screen_out">site01</h3></li>
+
+                <li class="s02"><h3 class="screen_out">site02</h3></li>
+                <li class="s03"><h3 class="screen_out">site03</h3></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          id="contact"
+          class="swiper-slide"
+        >
+          <div class="section_in">
+            <h2>Contact me</h2>
+            <h3>"열심히 보다 잘하는 사람이 되겠습니다."</h3>
+            <ul class="text_area">
+              <li>
+                <strong> Address </strong>
+                <p>서울시 광진구 자양동</p>
+              </li>
+              <li>
+                <strong> Phone </strong>
+                <p>+82-01-7159-1823</p>
+              </li>
+              <li>
+                <strong> E-mail </strong>
+                <p>myounghuikim26@gmail.com</p>
+              </li>
+              <li>
+                <strong> Web Site </strong>
+                <p>www.mayportfolio.com</p>
+              </li>
+            </ul>
+
+            <div class="copy">
+              <p>
+                본 페이지는 상업적 목적이 아닌<br />
+                개인 포트폴리오용으로 제작되었습니다.
+              </p>
+              <p>© 2023 Kimmh. All Rights Reserved.</p>
+            </div>
+          </div>
+          <svg
+            class="blob"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 500 500"
+            width="120%"
+            id="blobSvg"
+            filter="blur(50px)"
+            style="translate: 50vw, 50vh !important"
+          >
+            <defs>
+              <linearGradient
+                id="gradient"
+                x1="0%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
+                <stop
+                  offset="0%"
+                  style="stop-color: rgb(255, 64, 255)"
+                ></stop>
+                <stop
+                  offset="100%"
+                  style="stop-color: rgb(64, 101, 255)"
+                ></stop>
+              </linearGradient>
+            </defs>
+            <path
+              id="blob"
+              fill="url(#gradient)"
+              style="opacity: 0.2"
+            >
+              <animate
+                attributeName="d"
+                dur="10s"
+                repeatCount="indefinite"
+                values="M451.77435,331.68776Q380.0333,413.37552,297.8522,408.1811Q215.67111,402.98668,163.20108,360.14446Q110.73105,317.30225,116.40549,253.17111Q122.07993,189.03996,169.7144,146.88551Q217.34887,104.73105,314.55328,76.47669Q411.75769,48.22232,467.63654,149.11116Q523.51539,250,451.77435,331.68776Z;M390.7302,319.10952Q360.37524,388.21905,284.62068,409.39959Q208.86612,430.58014,161.11156,373.20082Q113.35701,315.8215,88.46857,238.04463Q63.58014,160.26776,136.76776,117.04463Q209.95537,73.8215,303.79007,69.52027Q397.62476,65.21905,409.35497,157.60952Q421.08517,250,390.7302,319.10952Z;M429.79847,339.54154Q392.67727,429.08308,294.97368,455.00137Q197.27008,480.91966,143.94598,403.56786Q90.62188,326.21607,83.52769,246.22992Q76.43351,166.24376,136.8518,92.77008Q197.27008,19.29641,287.1482,55Q377.02632,90.70359,421.97299,170.3518Q466.91966,250,429.79847,339.54154Z;M388.67097,319.27849Q360.55699,388.55699,291.23441,379.72688Q221.91183,370.89678,145.00645,354.28387Q68.10108,337.67097,71.32903,251.33548Q74.55699,165,142.39247,119.95591Q210.22796,74.91183,286.12043,91.61398Q362.0129,108.31613,389.39892,179.15806Q416.78495,250,388.67097,319.27849Z;M392.2525,331.53996Q379.05994,413.07992,285.7525,456.15485Q192.44505,499.22978,100.80019,432.44731Q9.15533,365.66484,30.81018,260.57493Q52.46503,155.48501,121.45005,74.10764Q190.43506,-7.26974,268.13261,60.97003Q345.83016,129.2098,375.63761,189.6049Q405.44505,250,392.2525,331.53996Z;M411.71818,339.87391Q393.61186,429.74783,302.23794,426.16285Q210.86403,422.57787,122.32727,388.31581Q33.79051,354.05375,61.55534,263.35692Q89.32016,172.66008,145.95613,107.46324Q202.59209,42.2664,289.95613,66.5581Q377.32016,90.8498,403.57233,170.4249Q429.82451,250,411.71818,339.87391Z;M384.02639,318.52969Q359.04619,387.05939,278.02474,435.01815Q197.0033,482.97691,137.94391,408.01485Q78.88453,333.05279,75.91422,249.0132Q72.94391,164.97361,138.46041,107.43731Q203.97691,49.90102,276.0132,88.41917Q348.04949,126.93731,378.52804,188.46866Q409.0066,250,384.02639,318.52969Z;M420.7122,331.4339Q380.09423,412.86779,301.16508,392.29219Q222.23594,371.7166,157.11322,349.24982Q91.99051,326.78305,53.64135,232.38203Q15.29219,137.98101,118.09898,129.47187Q220.90577,120.96273,294.67458,111.25967Q368.44339,101.55661,414.88678,175.77831Q461.33017,250,420.7122,331.4339Z;M400,314Q352,378,277,420Q202,462,143,396Q84,330,66.5,241.5Q49,153,125.5,97.5Q202,42,298.5,55Q395,68,421.5,159Q448,250,400,314Z;M451.77435,331.68776Q380.0333,413.37552,297.8522,408.1811Q215.67111,402.98668,163.20108,360.14446Q110.73105,317.30225,116.40549,253.17111Q122.07993,189.03996,169.7144,146.88551Q217.34887,104.73105,314.55328,76.47669Q411.75769,48.22232,467.63654,149.11116Q523.51539,250,451.77435,331.68776Z"
+              ></animate>
+            </path>
+          </svg>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+          <script>
+            // 마우스 포인터 blob
+            gsap.set('#blobSvg', { xPercent: -50, yPercent: -50 });
+
+            var cursor = document.querySelector('#blobSvg');
+
+            var mouseX;
+            var mouseY;
+
+            window.addEventListener('mousemove', (e) => {
+              mouseX = e.clientX;
+              mouseY = e.clientY;
+
+              gsap.to(cursor, 1, { x: mouseX, y: mouseY });
+              // 속도 조절값
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $('.kind_list li').click(function () {
+        $(this).toggleClass('on');
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+      });
+    </script>
+    <!-- 
+    Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        mousewheel: {
+          releaseOnEdges: true,
+        },
+      });
+    </script>
+
+    <script src="package/js/swiper.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
