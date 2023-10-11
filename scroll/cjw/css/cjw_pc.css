@@ -1,0 +1,1815 @@
+@charset "utf-8";
+/* #find-img-z-5, m_btn-z-5 h1_wrap-z-4 header-z-10*/
+@media screen and (min-width: 1300px) {
+  br {
+    display: block;
+  }
+
+  header {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 190px;
+    background: #fff;
+    z-index: 10;
+  }
+  .header_top {
+    font-size: inherit;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #a6a6a6;
+  }
+  h1 > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/cjw-logo-header.png) no-repeat center/contain;
+  }
+  .h1_wrap {
+    position: static;
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-bottom: none;
+    float: left;
+  }
+  .header_top_center {
+    width: 1276px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .header_bottom {
+    width: 100%;
+    height: 120px;
+  }
+  .header_bottom_center {
+    width: 1276px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  h1 {
+    position: static;
+    transform: translateX(0%);
+    width: 100%;
+    height: 100%;
+  }
+  #cjw_form {
+    float: left;
+    margin-top: 28px;
+    position: relative;
+  }
+  #cjw_form fieldset {
+    border: none;
+  }
+  #find {
+    border: none;
+    border-bottom: 1px solid #959595;
+    width: 185px;
+    height: 28px;
+    outline: none;
+  }
+  #find_img {
+    display: block;
+    position: absolute;
+    background: url(../images/cjw-icon-search1.png) no-repeat center/contain;
+    top: 0px;
+    left: auto;
+    right: 5px;
+    width: 20px;
+    border: none;
+    height: 20px;
+    z-index: 5;
+  }
+  .pc_log {
+    float: right;
+    font-size: 1.6rem;
+    line-height: 70px;
+    color: #747474;
+    padding-right: 70px;
+  }
+  .pc_log a::after {
+    content: '|';
+    width: 10px;
+    padding: 0 10px;
+  }
+  .pc_log a:last-child::after {
+    content: '';
+    padding: 0;
+  }
+  .pc_log > a:hover {
+    color: #01b5d6;
+  }
+  .pc_log > a:hover::after {
+    color: #747474;
+  }
+  .modal {
+    /* display: block; */
+  }
+  .nav_wrap {
+    position: static;
+    width: auto;
+    height: 100%;
+    overflow-y: visible;
+    float: right;
+    background-color: #fff;
+  }
+  .nav_wrap::-webkit-scrollbar {
+    display: none;
+  }
+  .inner_nav {
+    width: 100%;
+    margin: 0;
+  }
+  .m_log {
+    display: none;
+    width: 100%;
+    height: 75px;
+    border-bottom: 2px solid #ccc;
+  }
+  .m_log > span {
+    display: block;
+    width: 61px;
+    height: 22px;
+    margin-top: 31px;
+    float: left;
+    background: url(../images/cjw-logo-header.png) no-repeat center/contain;
+  }
+  .m_log > strong {
+    float: right;
+    margin-top: 35px;
+    color: #02b5d6;
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+  nav {
+    width: 100%;
+  }
+  .lnb {
+    width: 100%;
+  }
+  .lnb > li {
+    float: left;
+  }
+  .lnb li a {
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+  /* 브랜드스토리 */
+  .lnb > li > a {
+    height: 120px;
+    padding-left: 29px;
+    line-height: 120px;
+    font-size: 2.2rem;
+    border-bottom: none;
+    background: #fff;
+    color: #595959;
+    position: relative;
+  }
+  .lnb > li > a::after {
+    content: '|';
+    display: inline;
+    margin-left: 29px;
+    background: none;
+    margin-right: 0;
+  }
+  .lnb > li > a:hover::after {
+    background: none;
+  }
+  .lnb > li > a:hover::before {
+    background: none;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 20px solid rgb(74, 136, 243); /* 화살표 */
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 120px;
+    left: 45.5%;
+    font-size: 0px;
+    z-index: 11;
+  }
+  .lnb > li:last-child > a::after {
+    content: '';
+  }
+  /* list_container */
+  .lnb > li > div {
+    /* position: fixed; */
+    position: absolute;
+    top: 160px;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    height: 310px;
+    padding: 0;
+    background: #fff;
+    display: none;
+  }
+  /* 나중에 js로 click으로 바꾸셈 */
+  /* .lnb > li:hover > div {
+    display: block;
+    border-top: 1px solid #a6a6a6;
+  } */
+  .list_center {
+    width: 1276px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 10px;
+  }
+  .list_wrap {
+    width: 1052px;
+    height: 100%;
+    background: #fff;
+    float: right;
+    position: relative;
+  }
+  .list_left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding-top: 35px;
+    border-right: 1px solid #eee;
+  }
+  .list_left > ul {
+    float: left;
+    width: 50%;
+  }
+  .lnb > li:first-child .list_left ul {
+    width: 33%;
+  }
+  .lnb > li .list_right {
+    background: url(../images/cjw-bg-nav-brandStory.jpg) no-repeat center/180px;
+  }
+  .lnb .list_right ul li {
+    display: none;
+  }
+  /* 청정원 */
+  .list_left ul li a {
+    width: 100%;
+    font-size: 2rem;
+    height: 40px;
+    line-height: 32px;
+    border-bottom: none;
+    color: #000;
+    padding-left: 9px;
+  }
+  .list_left ul li a:hover {
+    font-weight: bold;
+  }
+  .list_right {
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding: 35px 0 0 35px;
+    float: right;
+  }
+  .list_right a {
+    display: block;
+    width: 90px !important;
+    height: 35px !important;
+    border: 2px solid #eee;
+    padding: 10px 10px;
+  }
+  .list_right a::after {
+    content: '';
+    position: absolute;
+    background: url(../images/cjw-plus-story-blue.png) no-repeat right 0 top 0 /
+      contain;
+    clear: both;
+    width: 10px;
+    height: 10px;
+    padding-left: 7px;
+    vertical-align: 15px;
+  }
+  .list_right b {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .list_right p {
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 10px 0;
+  }
+  .m_btn {
+    display: none;
+  }
+  /* 
+  .m_btn {
+    position: fixed;
+    border: none;
+    top: 29px;
+    right: 17px;
+    width: 24px;
+    height: 18px;
+    z-index: 5;
+    background: url(../images/cjw-arrow-section-right.png) no-repeat
+      center/contain;
+  }
+  .m_btn > span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background: #000;
+  }
+  .m_btn > span:nth-child(2) {
+    margin: 3px 0;
+  } */
+  /* 이벤트 보더 */
+  .lnb > li:last-child > a {
+    border-bottom: none;
+  }
+  .lnb > li > a:hover {
+    border-bottom: none;
+  }
+  .list_left ul li a.noline {
+    border: none;
+  }
+  .go_cen {
+    display: none;
+    background: #02b5d6;
+    width: 100%;
+    height: 118px;
+  }
+  .go_cen li {
+    border-bottom: 1px solid #70d5e8;
+    width: 100%;
+    line-height: 59px;
+    height: 60px;
+  }
+  .go_cen li:last-child {
+    border-bottom: none;
+  }
+  .go_cen > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 1.7rem;
+    background: url(../images/cjw-icon-login.png) no-repeat right 26px top 15px/27px
+      27px;
+    padding-left: 28px;
+  }
+  .go_cen > li:last-child > a {
+    background: url(../images/cjw-icon-phone.png) no-repeat right 26px top 15px/27px
+      27px;
+  }
+  /* header-end */
+  /* .slick_slide = .visual_slide> div*/
+  .visual_slide .slick-slide {
+    width: 100%;
+    height: 500px;
+  }
+  .visual_slide .slick-slide > img {
+    width: 100%;
+    height: 100%;
+  }
+  .visual_slide .slick-slide.s01 {
+    background: url(../images/cjw-bg011.jpg) no-repeat center/cover;
+  }
+
+  .visual_slide .slick-slide.s02 {
+    background: url(../images/cjw-bg021.jpg) no-repeat center/cover;
+  }
+
+  .visual_slide .slick-slide.s03 {
+    background: url(../images/cjw-bg031.jpg) no-repeat center/cover;
+  }
+  .visual_slide .slick-next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    background: url(../images/cjw-arrow-slider-right.png) no-repeat
+      center/contain;
+    border: none;
+  }
+
+  .visual_slide .slick-prev {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    background: url(../images/cjw-arrow-slider-left.png) no-repeat
+      center/contain;
+    border: none;
+    z-index: 10;
+  }
+
+  .visual_slide .slick-dots {
+    position: absolute;
+    left: 0;
+
+    bottom: 0px;
+    width: 100%;
+    display: none;
+    text-align: center;
+  }
+
+  .visual_slide .slick-dots > li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .visual_slide .slick-dots > li.slick-active button {
+    display: none;
+    background: rgb(27, 190, 255);
+  }
+  .visual_slide .slick-dots button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    font-size: 0;
+    background: rgb(255, 255, 255);
+    border: none;
+    display: none;
+  }
+
+  .visual {
+    margin-top: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .visual_slide_wrap {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+  }
+
+  .visual .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .visual_slide .slick-slide {
+    width: 100%;
+    height: 100%;
+  }
+  .visual_slide .slick-slide {
+    height: 1000px;
+    width: 100%;
+    padding-top: 230px;
+    text-align: center;
+    background: url(../images/cjw-bg-main.jpg) no-repeat center/cover;
+    color: #ffffff;
+  }
+  .visual_slide .slick-slide i {
+    display: block;
+    font-family: nbgR;
+    font-style: normal;
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
+  .visual_slide .slick-slide > i > span {
+    color: #fff857;
+  }
+  .visual_slide .slick-slide > i > span:nth-of-type(1) {
+    color: #81ebff;
+  }
+  .visual_slide .slick-slide > b {
+    font-family: nbgR;
+    display: block;
+    font-size: 80px;
+    margin-bottom: 54px;
+    font-weight: 400;
+  }
+  .visual_slide .slick-slide > p {
+    width: 296px;
+    width: 78.933333%;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 78px;
+  }
+
+  /* 바로가기 */
+  .visual_slide .slick-slide > a {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 79px;
+    width: 311px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .visual_slide .slick-slide:not(:nth-of-type(1)) {
+    display: block;
+  }
+  /* 인디케이터 */
+  .visual_slide_wrap .indi {
+    display: none;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    text-align: center;
+    font-size: 0;
+  }
+  .visual_slide_wrap .indi > li {
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+  }
+  .visual_slide_wrap .indi > li:nth-of-type(2) {
+    margin: 0 10px;
+  }
+  .visual_slide_wrap .indi > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+
+    background: #fff;
+  }
+  .brand_slide_wrap {
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+
+  .brand_slide_wrap .indi {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    display: none;
+    bottom: -35px;
+    left: 0;
+    text-align: center;
+    font-size: 0;
+  }
+  .brand_slide_wrap .indi > li {
+    display: none;
+    width: 10px;
+    height: 100%;
+  }
+  .brand_slide_wrap .indi > li:nth-of-type(2) {
+    margin: 0 10px;
+  }
+  .brand_slide_wrap .indi > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #959595;
+
+    background: #959595;
+  }
+
+  /* main */
+  main {
+    width: 100%;
+  }
+  .tab_wrap {
+    width: 100%;
+  }
+  .tab_nav {
+    width: 100%;
+    display: none;
+    height: 50px;
+    line-height: 49px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+  .tab_nav h2 {
+    display: none;
+  }
+  .tab_nav ul {
+    width: 100%;
+    height: 100%;
+  }
+  .tab_nav ul > li {
+    display: inline-block;
+    margin-right: 27px;
+  }
+  .tab_nav ul > li > a {
+    color: #b4b4b4;
+    font-size: 1.3rem;
+  }
+  .tab_nav ul > li > a:hover {
+    color: #000;
+  }
+  .tab_nav ul > li:nth-child(5) {
+    margin-right: 0;
+  }
+  .tab_nav ul > li:nth-child(4) {
+    display: none;
+  }
+
+  .tab_nav ul > li:nth-child(6) {
+    display: none;
+  }
+  #brand {
+    width: 100%;
+    height: 800px;
+    background: #f8f8f8;
+  }
+
+  /* .slick-slide = .brand_slide> div*/
+  .brand_slide .slick-slide {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+  }
+
+  .brand_slide .slick-dots {
+    position: absolute;
+    left: 0;
+
+    bottom: -35px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .brand_slide .slick-dots > li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .brand_slide .slick-dots > li:last-child {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .brand_slide .slick-dots > li.slick-active button {
+    background: rgb(27, 190, 255);
+  }
+  .brand_slide .slick-dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    font-size: 0;
+    background: rgb(121, 120, 120);
+    border: none;
+  }
+
+  .brand_slide_wrap {
+    width: 1280px;
+    margin: 27px auto 64px;
+  }
+  .brand_slide .slick-slide {
+    width: 100%;
+
+    display: block;
+    float: left;
+  }
+  .brand_slide .slick-slide {
+    width: 29% !important;
+    height: 510px;
+    padding: 10px 0 0 33px;
+    margin-right: 50px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2px;
+  }
+  .brand_slide .slick-slide > b {
+    display: block;
+    width: 72px;
+    height: 30px;
+    padding: 37px 0;
+  }
+  .brand_slide .slick-slide > i {
+    display: block;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  .brand_slide .slick-slide > p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 26px;
+  }
+  .brand_slide .slick-slide > a {
+    display: block;
+    width: 160px;
+    height: 44px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 6px;
+    border: 1px solid #cfcfcf;
+  }
+  .brand_slide .slick-slide > a::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 100%;
+    float: right;
+    margin-right: 10px;
+  }
+
+  .smart {
+    border-color: #f47933;
+    background: url(../images/cjw-bg-smart.jpg) no-repeat right 0px bottom -10px /
+      auto 400px;
+  }
+  .smart b {
+    background: url(../images/cjw-logo-smart.png) no-repeat center/contain;
+  }
+  .smart > a::after {
+    background: url(../images/cjw-plus-story-orange.png) no-repeat
+      center/contain;
+  }
+  .fresh {
+    border-color: #01b5d6;
+    background: url(../images/cjw-bg-fresh-origi.jpg) no-repeat right -10px bottom -10px /
+      auto 530px;
+  }
+
+  .fresh b {
+    background: url(../images/cjw-logo-fresh.png) no-repeat center/contain;
+  }
+
+  .fresh > a::after {
+    background: url(../images/cjw-plus-story-blue.png) no-repeat center/contain;
+  }
+  .classic {
+    border-color: #ef4665;
+    background: url(../images/cjw-bg-classic.jpg) no-repeat right -10px bottom 0px /
+      auto 500px;
+  }
+
+  .classic b {
+    background: url(../images/cjw-logo-classic.png) no-repeat center/contain;
+  }
+  .classic > a::after {
+    background: url(../images/cjw-plus-story-red.png) no-repeat center/contain;
+  }
+  .brand_slide > li > a.read_more {
+    padding-left: 17px;
+  }
+  .brand_slide > li:not(:nth-of-type(1)) {
+    display: block;
+  }
+
+  #cast {
+    width: 100%;
+    height: 1320px;
+    padding-top: 124px;
+    position: relative;
+
+    background: url(../images/cjw-bg02.jpg) no-repeat center/cover;
+  }
+  #cast .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  #cast .pc_center_content {
+    width: 1276px;
+    margin: 0 auto;
+    position: relative;
+  }
+  #cast .text_wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    width: 1276px;
+    height: 147px;
+    padding-top: 35px;
+    background-color: #ffffff;
+    text-align: left;
+    padding-top: 38px;
+    background: none;
+  }
+  .inner_center_content {
+    width: 1276px;
+    margin: 0 auto;
+  }
+  .cast_slide_wrap {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    width: 50% !important;
+    height: 897px;
+    margin: 0;
+  }
+  #cast .text_wrap > a::after {
+    content: '';
+    display: block;
+    float: right;
+    transform: translate(-20px, 28px);
+    width: 19px;
+    height: 19px;
+    background: url(../images/cjw-plus-section-blue.png) no-repeat center/cover;
+  }
+  #cast .text_wrap h2 {
+    font-family: nbgR;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 8rem;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  #cast .text_wrap > a {
+    display: inline-block;
+    width: 325px;
+    height: 75px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 73px;
+    padding-left: 35px;
+  }
+  #cast .inner_center_content {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    width: 100%;
+    height: 897px;
+    margin: 0;
+  }
+  .cast_slide_wrap {
+    width: 50%;
+    margin-bottom: 52px;
+  }
+  .cast_slide .slick-slide {
+    width: 100%;
+    height: 896px;
+    border: 2px solid #fff;
+    border-bottom: none;
+    border-radius: 5px;
+  }
+  .cast_slide .slick-slide > li {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 0;
+    border: none;
+  }
+  .cast_slide .slick-slide > div {
+    width: 100%;
+    height: 593px;
+    background: url(../images/cjw-banner.jfif) no-repeat center/cover;
+  }
+  .cast_slide .slick-slide:nth-child(2) div {
+    background: url(../images/cjw-banner02.jfif) no-repeat center/cover;
+  }
+  .cast_slide .slick-slide:nth-child(3) div {
+    background: url(../images/cjw-banner03.jfif) no-repeat center/cover;
+  }
+  .cast_slide .slick-slide > li > div {
+    font-size: 0;
+    width: 100%;
+    height: 597px;
+  }
+  .cast_slide .slick-slide > li > a {
+    display: block;
+    width: 100%;
+    height: 600px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .cast_slide .slick-slide > a > b {
+    display: block;
+    font-size: 34px;
+    padding: 25px 0;
+    font-weight: normal;
+  }
+
+  .cast_slide .slick-slide > a span {
+    display: block;
+    font-size: 16px;
+    padding: 0;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    border-radius: 2px;
+    font-weight: 200;
+    margin: 0 auto;
+    background-color: #02b5d6;
+  }
+  .cast_slide .slick-slide > a > p {
+    font-size: 16px;
+    padding: 15px 0;
+    color: #a6a6a6;
+    line-height: 1.4;
+    width: 75%;
+    text-align: center;
+    display: inline-block;
+  }
+  .cast_slide .slick-slide > a h3 {
+    font-weight: normal;
+    font-size: 20px;
+  }
+  .cast_slide .slick-slide > li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  .pc_cast_banner {
+    width: 100%;
+    margin-top: 295px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .pc_food_lab_wrap {
+    width: 100%;
+    display: flex;
+    height: 300px;
+  }
+  .pc_cast_banner h4 {
+    font-size: 34px;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  .pc_cast_banner p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .pc_cast_banner a > span {
+    display: block;
+    background: none;
+    width: 15px;
+    height: 29px;
+    float: right;
+    position: absolute;
+    font-size: 16px;
+    top: 50px;
+    right: 12px;
+    transform: translateY(-50%);
+  }
+  .full_lab {
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 10px;
+    border-radius: 2.5px;
+    padding: 70px 0 0 0;
+    text-align: center;
+    background: #fff;
+  }
+  .pc_food_lab_wrap > span {
+    display: block;
+    height: 100%;
+    width: 50%;
+    background: url(../images/cjw-img-high02.png) no-repeat center / cover;
+  }
+  .bottle_reci {
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin-left: 50%;
+    border-radius: 2.5px;
+    padding: 70px 0 0 0;
+    background: #02b5d6;
+    color: #fff;
+  }
+
+  .cast_slide_wrap {
+    width: 100%;
+    position: relative;
+  }
+
+  .cast_slide_wrap > .indi {
+    width: 100%;
+    display: none;
+    height: 10px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    text-align: center;
+    font-size: 0;
+  }
+  .cast_slide_wrap > .indi > li {
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+  }
+  .cast_slide_wrap > .indi > li:nth-of-type(2) {
+    margin: 0 10px;
+  }
+  .cast_slide_wrap > .indi > li > a {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #959595;
+
+    background: #959595;
+  }
+
+  #knowhow {
+    width: 100%;
+    background: #fff;
+    margin-top: -293px;
+  }
+
+  #knowhow .pc_center_content {
+    width: 1276px;
+    margin: 0 auto;
+    position: relative;
+  }
+  #knowhow .text_wrap {
+    right: 50%;
+    transform: translateX(100%);
+    top: auto;
+    width: 50%;
+    height: 300px;
+    padding-top: 56px;
+    text-align: right;
+
+    background: none;
+    color: #ffffff;
+  }
+  #knowhow .text_wrap > a::after {
+    content: '';
+    display: block;
+    float: right;
+    transform: translate(-20px, 28px);
+    width: 19px;
+    height: 19px;
+    background: url(../images/cjw-plus-section-blue.png) no-repeat center/cover;
+  }
+  #knowhow .text_wrap h2 {
+    font-family: nbgR;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 8rem;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: right;
+  }
+  #knowhow .text_wrap > a {
+    display: inline-block;
+    width: 325px;
+    height: 75px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 73px;
+    padding-left: 15px;
+    text-align: left;
+  }
+  #knowhow .inner_center_content {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin-top: -305px;
+    height: 897px;
+  }
+  .knowhow_slide_wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50% !important;
+    height: 897px !important;
+    margin: 0;
+  }
+  .knowhow_slide {
+    width: 100%;
+  }
+  .knowhow_slide .slick-slide {
+    width: 100%;
+    height: 896px;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(149, 149, 149, 0.6);
+  }
+
+  .knowhow_slide .slick-slide > div {
+    font-size: 0;
+    width: 100%;
+    height: 597px;
+    background: url(../images/cjw-img-specialRecipe.jpg) no-repeat center/cover;
+  }
+  .knowhow_slide .slick-slide > a {
+    display: block;
+    width: 100%;
+    height: 600px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .knowhow_slide .slick-slide > a > b {
+    display: block;
+    font-size: 34px;
+    padding: 25px 0;
+    font-weight: normal;
+  }
+  .knowhow_slide .slick-slide > a > h4 {
+    display: block;
+    font-weight: normal;
+    font-size: 20px;
+  }
+  .knowhow_slide .slick-slide > a > p {
+    display: block;
+    font-size: 16px;
+    padding: 15px 0 0;
+    color: #a6a6a6;
+    line-height: 1.4;
+  }
+  .knowhow_slide .slick-slide > a > p > span {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+  .knowhow_slide .slick-slide > a > span {
+    display: block;
+  }
+  .knowhow_slide .slick-slide > li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  /* 노하우청정원레시피 */
+
+  .pc_cjw_reci_wrap > span {
+    display: block;
+    width: 50%;
+    background: url(../images/cjw-img-high.jpg) no-repeat center/contain;
+  }
+  .pc_cjw_reci_wrap {
+    width: 100%;
+    display: flex;
+    height: 300px;
+  }
+  .pc_knowhow_banner {
+    width: 100%;
+    margin-top: 299px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .pc_knowhow_banner h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+  .pc_knowhow_banner p {
+    font-size: 1.1rem;
+    line-height: 11px;
+  }
+  .pc_knowhow_banner a > span {
+    display: none;
+    background: url(../images/cjw-arrow-section-right.png) no-repeat
+      center/contain;
+    width: 15px;
+    height: 29px;
+    float: right;
+    position: absolute;
+    top: 50px;
+    right: 12px;
+    transform: translateY(-50%);
+  }
+  .cjw_reci {
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 304px;
+    margin-bottom: 10px;
+    border-radius: 2.5px;
+    padding: 70px 0 0 0;
+    text-align: center;
+    background: #76d9c5;
+  }
+  .eshop {
+    position: relative;
+    display: block;
+    width: 330px;
+    height: 285px;
+
+    text-align: center;
+    margin-left: 330px;
+    border-radius: 2.5px;
+    padding: 70px 0 0 0;
+    background: #f4cb4d;
+    color: #252525;
+  }
+  .pc_cjw_reci_wrap {
+    width: 100%;
+    display: flex;
+    height: 300px;
+  }
+  .pc_knowhow_banner h4 {
+    font-size: 34px;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  .pc_knowhow_banner p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .knowhow_banner > a:not(:nth-of-type(3)) {
+    display: block;
+  }
+
+  /* 인디케이터 */
+
+  .knowhow_slide_wrap {
+    width: 100%;
+    position: relative;
+  }
+  .knowhow_slide_wrap > .indi {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    text-align: center;
+    font-size: 0;
+  }
+  .knowhow_slide_wrap > .indi > li {
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+  }
+  .knowhow_slide_wrap > .indi > li:nth-of-type(2) {
+    margin: 0 10px;
+  }
+  .knowhow_slide_wrap > .indi > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #959595;
+
+    background: #959595;
+  }
+  #friends {
+    background: #f8f8f8;
+    width: 100%;
+    height: 1209px;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url(../images/cjw-bg04.jpg) no-repeat center/cover;
+  }
+  #friends .text_wrap > a::after {
+    content: '';
+    display: block;
+    float: right;
+    transform: translate(-30px, 14px);
+    width: 10px;
+    height: 10px;
+    background: url(../images/cjw-plus-section-blue.png) no-repeat center/cover;
+  }
+  #friends .text_wrap {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    width: 1276px;
+    height: 147px;
+    background-color: #ffffff;
+    text-align: left;
+    background: none;
+  }
+  #friends .text_wrap > a::after {
+    content: '';
+    display: block;
+    float: right;
+    transform: translate(-20px, 28px);
+    width: 19px;
+    height: 19px;
+    background: url(../images/cjw-plus-section-blue.png) no-repeat center/cover;
+  }
+  #friends .text_wrap h2 {
+    font-family: nbgR;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 8rem;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  #friends .text_wrap > a {
+    display: inline-block;
+    width: 325px;
+    height: 75px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 73px;
+    padding-left: 35px;
+  }
+  .inner_center_content {
+    width: 1276px;
+    margin: -10px auto;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .food_box {
+    width: 50% !important;
+    height: 600px;
+    margin: 0;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    padding: 18px 0 0 30px;
+    border-radius: 5px;
+
+    background: #f4cb4d url(../images/cjw-icon-foodBox.png) no-repeat right 30px
+      bottom 3 0px / 224px 232px;
+  }
+  .food_box > h3 {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    padding: 25px 0;
+    font-weight: 400;
+  }
+  .food_box > b {
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 1.1;
+    color: #000;
+  }
+  /* line */
+  .food_box > span:nth-of-type(1) {
+    display: block;
+    width: 360px;
+    margin: 36px 0;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+  }
+  .food_box > p {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000;
+  }
+
+  .food_box > span:nth-of-type(2) {
+    display: block;
+    width: 154px;
+    height: 43px;
+    line-height: 43px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #fff;
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 16px;
+    margin: 40px 0;
+  }
+  /* 정원이의 프렌즈 패널 */
+  .pc_friends_banner {
+    width: 50%;
+    height: 300px;
+    display: block;
+  }
+  .pc_friends_banner h4 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: #ffffff98;
+  }
+  .pc_friends_banner p {
+    font-size: 22px;
+    line-height: 26px;
+    color: #fff;
+  }
+  .pc_friends_banner a > span {
+    display: none;
+  }
+
+  .friends_pannel {
+    position: absolute;
+    display: block;
+    height: 300px;
+    top: -150px;
+    width: 50%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 40px 0 0 42px;
+    background: #02b5d6 url(../images/cjw-icon-friendsPanel.png) no-repeat right
+      30px bottom 30px/220px 200px;
+  }
+  .pc_talk_group {
+    width: 50%;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    height: 600px;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .pc_talk_group > a {
+    width: 50%;
+    height: 300px;
+    border-radius: 2.5px;
+    text-align: center;
+    border: 2px solid #fff;
+    padding-top: 190px;
+    background: url(../images/cjw-icon-foodEditor.png) no-repeat center 50px/130px
+      130px;
+    background-color: #fff;
+  }
+  .pc_talk_group > a:last-child {
+    background: url(../images/cjw-icon-meetingTalk.png) no-repeat center 50px/126px
+      126px;
+    background-color: #fff;
+    border-left: none;
+    margin-top: 300px;
+  }
+  .pc_talk_group > a h4 {
+    font-size: 28px;
+    font-weight: normal;
+    padding: 7px;
+  }
+  .pc_talk_group > a p {
+    display: block;
+    font-size: 16px;
+  }
+  .edit_talk {
+    width: 100%;
+    display: block;
+  }
+  /* pc_talk_group-back */
+  .pc_talk_group > span {
+    display: block;
+    width: 50%;
+    text-indent: -9999px;
+    height: 300px;
+    background: url(../images/cjw-img-high02.jpg) no-repeat center/cover;
+  }
+  .sns {
+    width: 100%;
+    height: 950px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url(../images/cjw-bg-sns1.png) no-repeat right 0 top 0/ 300px;
+  }
+  .sns::before {
+    position: absolute;
+    content: '';
+    bottom: -110px;
+    left: 0;
+    background: url(../images/cjw-bg-sns2.png) no-repeat right 0 top 0 / contain;
+    clear: both;
+    width: 400px;
+    height: 400px;
+  }
+  .pc_center_content {
+    width: 1300px;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 0px;
+  }
+  .sns .text_wrap {
+    width: 50%;
+    height: 300px;
+    padding-top: 0;
+    background: none;
+    text-align: left;
+  }
+  .sns .text_wrap h2 {
+    font-weight: normal;
+    color: #000;
+    font-size: 80px;
+    text-align: left;
+    margin-bottom: 27px;
+  }
+  .sns .text_wrap p {
+    margin-bottom: 60px;
+    font-size: 28px;
+    color: #595959;
+  }
+  .sns .sns_box {
+    display: inline-block;
+    margin-bottom: 60px;
+  }
+
+  .sns li {
+    float: left;
+    width: 48px;
+    color: #595959;
+    height: 48px;
+    margin-right: 30px;
+  }
+  .sns li:last-child {
+    margin-right: 0;
+  }
+
+  .sns .sns_box > li > a {
+    display: block;
+    width: 100%;
+    color: #595959;
+    height: 100%;
+    background: url(../images/cjw-sns-facebook.png) no-repeat center/contain;
+  }
+
+  .sns .sns_box > li:nth-child(2) > a {
+    background: url(../images/cjw-sns-kakao.png) no-repeat center/contain;
+  }
+
+  .sns .sns_box > li:nth-child(3) > a {
+    background: url(../images/cjw-sns-blog.png) no-repeat center/contain;
+  }
+
+  .sns .sns_box > li:nth-child(4) > a {
+    background: url(../images/cjw-sns-twitter.png) no-repeat center/contain;
+  }
+
+  .sns .sns_box > li:nth-child(5) > a {
+    background: url(../images/cjw-sns-instagram.png) no-repeat center/contain;
+  }
+
+  .sns .sns_box > li:nth-child(6) > a {
+    background: url(../images/cjw-sns-youtube.png) no-repeat center/contain;
+  }
+  .notice {
+    display: flex;
+    flex-flow: column;
+    width: 650px;
+    height: 300px;
+    padding: 35px 0 0 35px;
+    background: none;
+    text-align: center;
+    text-align: left;
+    background-color: #eee;
+    font-size: 20px;
+  }
+  .notice h4 {
+    font-size: 18px;
+    display: block;
+    width: 90%;
+    border-bottom: 1px solid #bbbaba;
+    padding-bottom: 20px;
+  }
+  .notice ol {
+    display: block;
+    flex-flow: column;
+    width: 600px;
+    padding-top: 20px;
+    height: 300px;
+  }
+  .notice ol li {
+    display: flex;
+    flex-flow: row wrap;
+    width: 600px;
+  }
+  .notice ol li a b {
+    font-weight: 400;
+    display: inline-block;
+    width: 170px;
+  }
+  .notice ol li a span {
+    color: #595959;
+  }
+  .inner_center_content {
+    width: 100%;
+    display: flex;
+    margin: 0;
+  }
+  .naver_blog_face_wrap {
+    height: 347px;
+    width: 100%;
+  }
+  .naver_img_back {
+    display: block;
+    border: 1px solid rgba(241, 241, 241, 0.6);
+    width: 25%;
+    height: 347px;
+    background: url(../images/cjw-img-snsFacebook.jpg) no-repeat center/347px;
+    float: left;
+  }
+  .naver_blog_text {
+    display: block;
+    width: 25%;
+    border: 1px solid rgba(241, 241, 241, 0.6);
+    height: 347px;
+    padding: 11px 0 0 31px;
+    float: left;
+    background: url(../images/cjw-sns-blog.png) no-repeat right 30px top 50px /
+      34px;
+    border-right: none;
+  }
+  .naver_blog_text h4 {
+    font-weight: normal;
+    font-size: 18px;
+    color: #595959;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    font-weight: bold;
+  }
+  .naver_blog_text p {
+    color: #595959;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  /* naver_blog */
+
+  .face_img_back {
+    display: block;
+    border: 1px solid rgba(241, 241, 241, 0.6);
+    width: 25%;
+    height: 347px;
+    background: url(../images/cjw-img-snsNaver.jpg) no-repeat center/347px;
+    float: left;
+    border-top: none;
+  }
+  .face_text {
+    display: block;
+    width: 25%;
+    border: 1px solid rgba(241, 241, 241, 0.6);
+    height: 347px;
+    padding: 11px 0 0 31px;
+    float: right;
+    border-top: none;
+    background: url(../images/cjw-sns-facebook.png) no-repeat right 30px top
+      50px / 34px;
+  }
+  .face_text h4 {
+    font-weight: normal;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    padding-top: 50px;
+  }
+  .face_text p {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  /* facebook */
+  footer {
+    background: #f8f8f8;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pcfoo_inner_center {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .family {
+    display: none;
+  }
+  .site_link {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgba(189, 187, 187, 0.6);
+    border-bottom: 1px solid rgba(189, 187, 187, 0.6);
+  }
+  .site_link > li {
+    width: auto;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid rgba(255, 0, 0, 0.6);
+    font-size: 18px;
+    text-align: center;
+    display: block;
+  }
+  .site_link > li:last-child {
+    display: block;
+  }
+  .site_link .mobile {
+    display: none;
+  }
+  .site_link > li > a {
+    font-weight: bold;
+    display: block;
+    width: auto;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 25px;
+    font-size: 1.2rem;
+    color: #747474;
+  }
+  .site_link > li > a:hover {
+    color: #000;
+  }
+  .site_link > li {
+    float: left;
+    border-top: none;
+    border-right: none;
+  }
+  .foo_sns_link {
+    display: none;
+  }
+  .copy_wrap {
+    width: 100%;
+  }
+  .site_link_add {
+    display: none;
+    width: 100%;
+    height: 50px;
+    line-height: 49px;
+  }
+  .site_link_add > a {
+    display: block;
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding-left: 31px;
+    font-size: 1rem;
+    color: #747474;
+    border: none;
+    background: url(../images/cjw-logo-ccm.png) no-repeat top 13px left 34px/ 25px
+      25px;
+    margin-bottom: 28px;
+  }
+  .site_link_add > a:first-child {
+    padding-left: 66px;
+  }
+  .site_link_add > a:last-child {
+    padding-left: 50px;
+    background: url(../images/cjw-logo-wa.png) no-repeat top 12px left 25px/ 20px
+      25px;
+  }
+  .site_link_add > a:hover {
+    color: #000;
+  }
+
+  .copy {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+  .bottom_logo {
+    display: block;
+    width: 60px;
+    height: 80px;
+    margin: 28px;
+    background: url(../images/cjw-logo-footer.png) no-repeat center/contain;
+  }
+
+  .copy > p > span {
+    font-size: 15px;
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #666666;
+    float: left;
+  }
+
+  .copy .phone {
+    text-align: center;
+    display: block;
+    font-size: 1.1rem;
+    font-style: normal;
+    line-height: 16px;
+    margin: 0 auto;
+    color: #666666;
+  }
+  .copy .phone a {
+    color: #666666;
+  }
+  .copy .phone > span {
+    display: inline-block;
+  }
+  .phone span:first-child {
+    width: 185px;
+  }
+  .phone span:nth-of-type(2) {
+    width: 132px;
+  }
+
+  .phone span:nth-of-type(3) {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .copy .phone span:first-child::after {
+    content: '|';
+    width: 10px;
+    height: 10px;
+    padding: 0 10px;
+  }
+  .copy > small {
+    background-color: #666666;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+    color: #fff;
+  }
+}
