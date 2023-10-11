@@ -255,10 +255,10 @@
         </div>
         <div
           class="about_right"
-          data-aos="fade-left"
+          data-aos="fade-in"
           data-aos-easing="linear"
-          data-aos-offset="500"
-          data-aos-duration="1500"
+          data-aos-offset="300"
+          data-aos-delay="500"
         >
           <div class="photo"><p class="screen_out">photo</p></div>
         </div>
@@ -366,7 +366,7 @@
       <div class="blur">
         <div
           class="section_in"
-          data-aos="fade-up"
+          data-aos="fade-in"
           data-aos-anchor-placement="top-bottom"
           data-aos-easing="linear"
           data-aos-offset="500"
@@ -388,7 +388,12 @@
     >
       <div class="section_in">
         <h2 data-aos="zoom-in-up">Contact me</h2>
-        <h3 data-aos="zoom-in-up">"열심히 보다 잘하는 사람이 되겠습니다."</h3>
+        <h3
+          data-aos="zoom-in-up"
+          data-aos-delay="200"
+        >
+          "열심히 보다 잘하는 사람이 되겠습니다."
+        </h3>
         <ul class="text_area">
           <li>
             <strong> Address </strong>
@@ -507,7 +512,7 @@
 
     <script src="package/js/swiper.min.js"></script>
     <script>
-      AOS.init();
+      AOS.init({ easing: 'ease', duration: 800 });
     </script>
   </body>
 </html>

@@ -1,71 +1,62 @@
 // m_btn
 $(function () {
   function navWrapFront() {
-    $(".nav_list").stop().animate(
+    $('.nav_list').stop().animate(
       {
-        right: "0",
+        right: '0',
       },
       500
     );
   }
 
   function navWrapBack() {
-    $(".nav_list").stop().animate(
+    $('.nav_list').stop().animate(
       {
-        right: "-100%",
+        right: '-100%',
       },
       500
     );
   }
-  $(window).resize(function () {
-    var win_w = $(window).width();
-    if (win_w >= 1800) {
-      $(".nav_list").css({ right: "900px" });
-    } else if (win_w >= 1007) {
-      $(".nav_list").css({ right: "200px" });
-    } else {
-      $(".nav_list").css({ right: "-100%" });
-    }
-  });
-  $(".m_btn").click(function () {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active").stop().animate({
-        left: "93%",
+
+  $('.m_btn').click(function () {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active').stop().animate({
+        left: '93%',
       });
-      $("header").removeClass("active").stop().animate({
-        left: "0",
+      $('header').removeClass('active').stop().animate({
+        left: '0',
       });
       navWrapBack();
-      $(".title").show();
-      $(".modal").hide();
+      $('.title').show();
+      $('.modal').hide();
     } else {
-      $(this).addClass("active").stop().animate({
-        left: "93%",
+      $(this).addClass('active').stop().animate({
+        left: '93%',
       });
-      $("header").addClass("active").stop().animate({
-        left: "0",
+      $('header').addClass('active').stop().animate({
+        left: '0',
       });
       navWrapFront();
-      $(".title").hide();
-      $(".modal").show();
+      $('.title').hide();
+      $('.modal').show();
     }
   });
-  $(".nav_list a").click(function () {
-    if ($(".m_btn").removeClass("active")) {
+  $('.nav_list a').click(function () {
+    if ($('.m_btn').removeClass('active')) {
       navWrapBack();
-      $(".title").show();
-      $("nav").show();
-      $(".modal").hide();
+      $('.title').show();
+      $('nav').show();
+      $('.modal').hide();
     } else {
       navWrapFront();
-      $("nav").hide();
-      $(".m_btn").show();
+      $('nav').hide();
+      $('.m_btn').show();
     }
   });
 });
 $(function () {
-  $(".site_area").slick({
-    slide: "div", //슬라이드 되어야 할 태그
+  $('.site_area').slick({
+    slide: 'div', //슬라이드 되어야 할 태그
     infinite: true, //무한 반복 옵션
     slidesToShow: 3, // 한 화면에 보여질 컨텐츠 개수
     slidesToScroll: 1, //스크롤 한번에 움직일 컨텐츠 개수
