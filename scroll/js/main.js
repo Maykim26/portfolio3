@@ -21,7 +21,8 @@ $(function () {
   $('.m_btn').click(function () {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active').stop().animate({
-        left: '93%',
+        // left: '93%',
+        right:'5%',
       });
       $('header').removeClass('active').stop().animate({
         left: '0',
@@ -31,7 +32,8 @@ $(function () {
       $('.modal').hide();
     } else {
       $(this).addClass('active').stop().animate({
-        left: '93%',
+        // left: '93%',
+        right:'5%',
       });
       $('header').addClass('active').stop().animate({
         left: '0',
