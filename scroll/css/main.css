@@ -303,37 +303,67 @@ table .test td {
   width: 1500px;
   height: 800px;
   display: flex;
-  justify-content: center;
-
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-around;
   align-items: center;
+  padding-top: 100px;
 }
-
-#clone .s01 {
-  width: 1000px;
-  height: 600px;
+#clone .image {
   border: 1px solid #252525;
-  border-radius: 80px;
-  position: absolute;
-  z-index: 110;
+  border-radius: 15px;
+  height: 400px;
+}
+#clone .s01 .image {
   background: url(../image/s01.jpg) no-repeat center/cover;
 }
-#clone .s02,
-#clone .s03 {
-  width: 500px;
-  height: 400px;
-  border: 1px solid #252525;
-  border-radius: 80px;
-  background: url(../image/s03.png) no-repeat center/cover;
-  float: left;
-}
-#clone .s02 {
+#clone .s02 .image {
   background: url(../image/s02.png) no-repeat center/cover;
-  margin-right: 400px;
+}
+#clone .s03 .image {
+  background: url(../image/s03.png) no-repeat center/cover;
 }
 
 #clone {
   background: url(../image/clone.png) no-repeat left/contain;
   z-index: 80;
+}
+
+#clone .site_area li {
+  transform: scale(0.85);
+}
+#clone .site_area li.slick-center {
+  transform: scale(1);
+  position: relative;
+  z-index: 50;
+}
+#clone .site_area li h3 {
+  font-size: 24px;
+  padding: 20px;
+  display: block;
+  width: 215px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+#clone .site_area li h3 span {
+  font-size: 15px;
+  margin-left: 10px;
+  color: #666;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'AppleSDGothicNeo', sans-serif;
+}
+#clone .site_area li h3 span::after {
+  content: '';
+  display: block;
+  margin-top: 9px;
+  float: right;
+  clear: both;
+  width: 12px;
+  height: 12px;
+  background: url(../image/icon/rightarrow.png) no-repeat center/contain;
 }
 .blur {
   backdrop-filter: blur(25px) contrast(0.6) brightness(1.2) invert(0);
@@ -348,12 +378,14 @@ table .test td {
   width: 100%;
   margin: 0 auto;
   font-family: 'Roboto';
-
+  font-size: 34px;
+  padding-top: 140px;
   flex-direction: column;
   display: flex;
   justify-content: space-between;
   text-align: left;
   align-items: center;
+  color: #252525;
 }
 /* clone */
 #contact {
