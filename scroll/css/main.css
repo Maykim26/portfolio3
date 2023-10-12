@@ -6,7 +6,7 @@ header {
   left: 0;
   width: 100%;
   height: 110px;
-  z-index: 10;
+  z-index: 99999;
   float: left;
 }
 header.active {
@@ -50,14 +50,14 @@ header.active {
 /* active */
 .m_btn.active {
   background: url(../image/icon/9074162_x_icon.png) no-repeat center/contain;
-  z-index: 110;
+  z-index: 9999;
 }
 .m_btn.active > span {
   position: absolute;
   top: 0;
   left: 0;
   display: none;
-  z-index: 110;
+  z-index: 9999;
   width: 100%;
   height: 4px;
   border-radius: 4px;
@@ -84,7 +84,7 @@ h1 > a {
   width: 100%;
   height: 100%;
   overflow-y: auto;
-  z-index: 100;
+  z-index: 9000;
   background-color: #ffffff;
   margin: 0 auto;
 }
@@ -95,9 +95,9 @@ h1 > a {
   display: flex;
   flex-flow: column wrap;
   text-align: center;
-  padding: 40px 0 40px 50px;
+  padding: 30px 0 30px 50px;
   color: #252525;
-  font-size: 42px;
+  font-size: 34px;
   transition: all 0.2s ease-out;
   font-weight: bold;
 }
@@ -122,16 +122,26 @@ h1 > a {
 h1 > a {
   display: none;
 }
-#visual,
 #clone,
 #contact {
   width: 100%;
-  height: 1100px;
+  margin: 100px 0;
+}
+#visual {
+  width: 100%;
+  padding: 400px 0;
 }
 #about {
   width: 100%;
-  height: 700px;
+  /* height: 700px; */
+  padding-top: 150px;
+  margin-bottom: 150px;
+  position: relative;
+  z-index: 10;
+  background: none;
+  /* margin: 150px; */
 }
+
 #visual h1 {
   position: relative;
   line-height: 1.6;
@@ -170,6 +180,7 @@ marquee {
 .about_left span {
   font-size: 30px;
   font-weight: 400;
+  word-break: keep-all;
 }
 .about_left p {
   padding: 40px 0;
@@ -197,11 +208,14 @@ marquee {
 
   border-radius: 20px;
   border: 1px solid #252525;
-  height: 760px;
-  background: url(../image/aboutme.jpeg) no-repeat center/cover;
+  height: 680px;
+  background: url(../image/aboutme.jpeg) no-repeat right -140px top 0 / cover;
 }
 /* about */
-
+#project {
+  width: 100%;
+  padding-top: 30px;
+}
 #project .section_in {
   width: 100%;
   margin: 0 auto;
@@ -219,7 +233,7 @@ marquee {
   justify-content: space-evenly;
   margin-right: 400px;
   align-items: center;
-  margin-top: 300px;
+  margin-top: 50px;
   margin-bottom: 145px;
 }
 
@@ -236,13 +250,18 @@ marquee {
   background: url(../img/psd-1.jpg) no-repeat center/contain;
   width: 510px;
   height: 340px;
+  transform: scale(1.2);
   transition: transform 0.5s ease-out;
+}
+#project .mockup_wrap {
+  width: 510px;
+  height: 340px;
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid #252525;
 }
 #project .mockup:hover {
-  transform: scale(1.015);
+  transform: scale(1.3);
 }
 #project .section_in .textarea {
   width: 40%;
@@ -308,21 +327,21 @@ table .test td {
   align-content: space-around;
   justify-content: space-around;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 #clone .image {
-  border: 1px solid #252525;
+  border: 2px solid #666;
   border-radius: 15px;
-  height: 400px;
+  height: 656px;
 }
 #clone .s01 .image {
-  background: url(../image/s01.jpg) no-repeat center/cover;
+  background: url(../image/hd.jpg) no-repeat center/contain;
 }
 #clone .s02 .image {
-  background: url(../image/s02.png) no-repeat center/cover;
+  background: url(../image/food.jpg) no-repeat center/contain;
 }
 #clone .s03 .image {
-  background: url(../image/s03.png) no-repeat center/cover;
+  background: url(../image/app.jpg) no-repeat center/contain;
 }
 
 #clone {
@@ -379,7 +398,8 @@ table .test td {
   margin: 0 auto;
   font-family: 'Roboto';
   font-size: 34px;
-  padding-top: 140px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   flex-direction: column;
   display: flex;
   justify-content: space-between;
@@ -390,6 +410,8 @@ table .test td {
 /* clone */
 #contact {
   position: relative;
+  z-index: 100;
+  background: none;
 }
 
 #contact .section_in {
@@ -433,25 +455,12 @@ table .test td {
 }
 .copy:last-child p {
   padding-top: 20px;
+  font-size: 14px;
+  line-height: 1.3;
 }
 svg.blob {
   left: 0;
   top: 0;
   transform: translate(-50%, -50%);
-  position: absolute;
-}
-
-#contact svg.blob {
-  left: 0;
-  top: 0;
-  transform: translate(-40%, -10%) !important;
-  z-index: 1;
-  overflow: hidden;
-}
-
-#about svg.blob {
-  left: 0;
-  top: 0;
-  overflow: hidden;
-  transform: translate(-30%, 130%) !important;
+  /* position: absolute; */
 }
