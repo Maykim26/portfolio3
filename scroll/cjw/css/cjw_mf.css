@@ -770,8 +770,8 @@
     font-weight: 400;
   }
   .pc_cast_banner p {
-    font-size: 1.1rem;
-    line-height: 11px;
+    font-size: 1.1rem;  line-height: 1.4;
+
   }
   .pc_cast_banner a > span {
     display: block;
@@ -779,7 +779,8 @@
       center/contain;
     width: 15px;
     height: 29px;
-    float: right;
+  line-height: 1.4;
+  float: right;
     position: absolute;
     top: 50px;
     right: 12px;
@@ -792,6 +793,7 @@
     height: 100px;
     margin-bottom: 10px;
     border-radius: 2.5px;
+  line-height: 1.4;
     padding: 24px 30px 0 100px;
     background: #01b5d6 url(../images/cjw-icon-foodLab.png) no-repeat 14px 25px/58px
       50px;
@@ -924,8 +926,8 @@
     display: none;
   }
   .knowhow_slide .slick-slide > a > p {
-    font-size: 1.3rem;
-    line-height: 15px;
+    font-size: 1.3rem;  line-height: 1.4;
+
     margin-top: 15px;
   }
   .knowhow_slide .slick-slide > a > p > span {
@@ -962,7 +964,7 @@
   }
   .pc_knowhow_banner p {
     font-size: 1.1rem;
-    line-height: 11px;
+    line-height: 1.4;
   }
   .pc_knowhow_banner a > span {
     display: block;
@@ -981,7 +983,8 @@
     display: block;
     width: 100%;
     height: 112px;
-    margin-bottom: 10px;
+  line-height: 1.4;
+  margin-bottom: 10px;
     border-radius: 2.5px;
     padding: 24px 30px 0 100px;
     background: #76d9c5 url(../images/cjw-icon-cjwRecipe.png) no-repeat 14px
@@ -1106,7 +1109,7 @@
   .food_box > p {
     font-weight: normal;
     font-size: 1.1rem;
-    line-height: 13px;
+    line-height: 1.4;
   }
 
   .food_box > span:nth-of-type(2) {
@@ -1126,13 +1129,13 @@
   }
   .pc_friends_banner h4 {
     font-size: 1rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: 400;
     color: #fff;
   }
   .pc_friends_banner p {
     font-size: 1.2rem;
-    line-height: 13px;
+    line-height: 1.4;
     color: #fff;
   }
   .pc_friends_banner a > span {
@@ -1296,7 +1299,7 @@
   .naver_blog_text p {
     color: #595959;
     font-size: 1.2rem;
-    line-height: 14px;
+    line-height: 1.4;
   }
   /* naver_blog */
 
@@ -1328,7 +1331,7 @@
   }
   .face_text p {
     font-size: 1.2rem;
-    line-height: 14px;
+    line-height: 1.4;
   }
   /* facebook */
   footer {

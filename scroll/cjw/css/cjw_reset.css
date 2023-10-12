@@ -23,6 +23,7 @@ html {
 
 body {
   font-family: 'Spoqa Han Sans';
+  word-break: keep-all; 
   line-height: 1;
 }
 
