@@ -198,6 +198,9 @@ svg.blob { left: 0; top: 0; transform: translate(-50%, -50%); /* position: absol
  #contact h3 { display: block; width: 70%; text-align: center; font-size: 25px; line-height: 1.4; } #contact h2 {
   font-size: 36px;
  }
+ svg.blob {
+  width: 100% ; 
+ }
  }
 
 
