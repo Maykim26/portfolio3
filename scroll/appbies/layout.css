@@ -41,7 +41,7 @@ a {
   left: -9999px;
 }
 .wrap {
-  width: 1600px;
+  width: 1920px;
   margin: 0 auto;
 }
 
@@ -56,7 +56,6 @@ a {
   }
 }
 header {
-  width: 100%;
   height: 930px;
   background: url(img/appbies-bg-visual.jpg) no-repeat center/cover;
   position: relative;
@@ -495,7 +494,7 @@ main .download a:first-child {
   height: 1063px;
   margin-top: 190px;
 }
-.updates div {
+.updates div:first-child {
   width: 1172px;
   margin: 0 auto;
 }
@@ -504,7 +503,7 @@ main .download a:first-child {
   color: #333333;
 }
 .updates .amount {
-  margin: 75px 0;
+  margin: 75px auto;
   text-align: center;
   float: left;
 }
