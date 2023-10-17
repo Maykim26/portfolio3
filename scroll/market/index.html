@@ -45,6 +45,12 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/main.js"></script>
+    <!-- AOS 라이브러리 불러오기-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header>
@@ -88,12 +94,12 @@
     <main>
       <div id="visual">
         <div class="visual_wrap">
-          <div class="visual_title">
+          <div class="visual_title"data-aos="zoom-out"data-aos-easing="ease-in-sine"    data-aos-duration="1000">
             <h3>전통시장 정보<span> 어디에서 찾으세요?</span></h3>
             <p>전통시장통통에는 전국에 있는 시장정보가 있습니다.</p>
           </div>
-          <div class="search">
-            <div class="search_wrap">
+          <div class="search"data-aos="flip-up"data-aos-easing="ease-in-sine"    data-aos-duration="1500">
+            <div class="search_wrap"  >
               <ul class="search_ul">
                 <li><b>시장명</b> <input type="search" /></li>
                 <li>
@@ -124,7 +130,7 @@
             <div class="item notice">
               <h3>공지사항</h3>
               <ul>
-                <li>2023년 전국우수시장박람회 가시장 설명회01</li>
+                <li>2023년 전국우수시장박람회 가시장 설명회</li>
                 <!-- <li>2023년 전국우수시장박람회 가시장 설명회02</li>
                 <li>2023년 전국우수시장박람회 가시장 설명회03</li> -->
               </ul>
@@ -133,7 +139,7 @@
             <div class="item market">
               <h3>우리시장 자랑</h3>
               <ul>
-                <li>[시장마실] 서울용산용문시장 온라인진출1</li>
+                <li>[시장마실] 서울용산용문시장 온라인진출</li>
                 <!-- <li>[시장마실] 서울용산용문시장 온라인진출2</li>
                 <li>[시장마실] 서울용산용문시장 온라인진출3</li> -->
               </ul>
@@ -146,14 +152,16 @@
 
         <div id="re-market">
           <div class="re-market_wrap">
-            <div class="title text_wrap">
+            <div class="title text_wrap" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
               <h2>다시, 시장</h2>
               <p>전통시장 활성화 프로젝트</p>
             </div>
 
             <div class="item_wrap">
               <ul class="market_list">
-                <li class="market_item01">
+                <li class="market_item01" data-aos="fade-up"
+                data-aos-duration="1000">
                   <div class="thumbnail"></div>
                   <div class="text_wrap shadow">
                     <h3>장유전통시장<br />[칼국수 맛집]</h3>
@@ -164,7 +172,8 @@
                     </p>
                   </div>
                 </li>
-                <li class="market_item02">
+                <li class="market_item02" data-aos="fade-up"
+                data-aos-duration="1500">
                   <div class="thumbnail"></div>
                   <div class="text_wrap shadow">
                     <h3>전남진장흥토요시장<br />[만두 맛집]</h3>
@@ -175,7 +184,8 @@
                     </p>
                   </div>
                 </li>
-                <li class="market_item03">
+                <li class="market_item03" data-aos="fade-up"
+                data-aos-duration="2000">
                   <div class="thumbnail"></div>
                   <div class="text_wrap shadow">
                     <h3>서문시장<br />[분식 맛집]</h3>
@@ -186,7 +196,8 @@
                     </p>
                   </div>
                 </li>
-                <li class="market_item04">
+                <li class="market_item04" data-aos="fade-up"
+                data-aos-duration="2500">
                   <div class="thumbnail"></div>
                   <div class="text_wrap shadow">
                     <h3>진주장대시장<br />[순대국밥 맛집]</h3>
@@ -198,7 +209,8 @@
                     </p>
                   </div>
                 </li>
-                <li class="market_item05">
+                <li class="market_item05" data-aos="fade-up"
+                data-aos-duration="3000">
                   <div class="thumbnail"></div>
                   <div class="text_wrap shadow">
                     <h3>정읍연지시장<br />[중식 맛집]</h3>
@@ -217,11 +229,13 @@
         <!-- re-market end-->
         <div id="mall">
           <div class="mall_wrap">
-            <div class="title text_wrap">
+            <div class="title text_wrap"data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
               <h2>전통시장 쇼핑몰</h2>
               <p>온누리 전자상품권(팔도명품 상품권) 온라인 사용처</p>
             </div>
-            <div class="item_wrap shadow">
+            <div class="item_wrap shadow"  data-aos="zoom-out"
+            data-aos-duration="1000">
               <div class="mall_list ir_pm">mall_list</div>
             </div>
           </div>
@@ -229,14 +243,15 @@
         <!-- mall -->
         <div id="online">
           <div class="online_wrap">
-            <div class="title text_wrap">
+            <div class="title text_wrap"data-aos="fade-up" 
+            data-aos-anchor-placement="bottom-bottom">
               <h2>전통시장 온라인 장보기</h2>
               <p>믿고 살 수 있는 팔도상품 다 모였네! 우체국 쇼핑</p>
             </div>
             <ul class="online_item">
-              <li class="ir_pm shadow">item01</li>
-              <li class="ir_pm shadow">item02</li>
-              <li class="ir_pm shadow">item03</li>
+              <li class="ir_pm shadow"  data-aos="flip-left"data-aos-easing="ease-in-sine"    data-aos-duration="500">item01</li>
+              <li class="ir_pm shadow"data-aos="flip-left"data-aos-easing="ease-in-sine"    data-aos-duration="1000">item02</li>
+              <li class="ir_pm shadow"data-aos="flip-left"data-aos-easing="ease-in-sine"    data-aos-duration="1500">item03</li>
             </ul>
           </div>
         </div>
@@ -244,7 +259,8 @@
       <!-- online, background end -->
       <div id="onnuri">
         <div class="onnuri_wrap">
-          <div class="title  text_wrap">
+          <div class="title  text_wrap"data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
             <h2 class="blue">온누리상품권</h2>
             <p>온누리 전자상품권(팔도명품 상품권) 온라인 사용처</p>
           </div>
@@ -286,6 +302,10 @@
       ></div>
       </div>
       
-    </footer>
+    </footer>  
+      <script src="package/js/swiper.min.js"></script>
+    <script>
+      AOS.init({ easing: 'ease', duration: 800 });
+    </script>
   </body>
 </html>

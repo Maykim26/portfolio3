@@ -441,6 +441,9 @@ table .test td {
 #project .cjw .mockup {
   background: url(../img/Scene-10.jpg) no-repeat center/contain;
 }
+#project .tong .mockup {
+  background: url(../img/work3.jpg) no-repeat center/contain;
+}
 /* project */
 @media (max-width: 1440px) {
   .aesop,
