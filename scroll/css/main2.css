@@ -389,11 +389,17 @@ marquee {
   color: #25252579;
   font-size: 20px;
   font-weight: 400;
+  margin: 0 0 10px 5px;
 }
 #project h1 {
-  font-size: 48px;
+  font-size: 44px;
+  font-family: 'AppleSDGothicNeo', sans-serif;
+
   font-weight: 500;
   margin-bottom: 40px;
+}
+#project .aesop h1 {
+  font-family: 'Roboto', sans-serif;
 }
 table {
   font-size: 20px;
@@ -437,14 +443,16 @@ table .test td {
 }
 /* project */
 @media (max-width: 1440px) {
-  .aesop {
+  .aesop,
+  .tong {
     margin-bottom: 30px;
     margin-top: 10px;
   }
 }
 @media (max-width: 1200px) {
   .aesop,
-  .cjw {
+  .cjw,
+  .tong {
     margin-bottom: 30px;
     margin-top: 10px;
     flex-flow: column nowrap;
