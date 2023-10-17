@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-style: normal;
+  font-weight: 500;
+  src: local('AppleSDGothicNeoB'),
+    /* IE6-IE8 */ url('../font/AppleSDGothicNeoB.woff2') format('woff2'),
+    /* Modern Browsers */ url('AppleSDGothicNeoB.woff') format('woff');
+}
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('AppleSDGothicNeoSB'),
+    /* IE6-IE8 */ url('../font/AppleSDGothicNeoSB.woff2') format('woff2'),
+    /* Modern Browsers */ url('AppleSDGothicNeoSB.woff') format('woff');
+}
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-style: normal;
+  font-weight: 200;
+  src: local('AppleSDGothicNeoR'),
+    /* IE6-IE8 */ url('../font/AppleSDGothicNeoR.woff2') format('woff2'),
+    /* Modern Browsers */ url('AppleSDGothicNeoR.woff') format('woff');
+}
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-style: normal;
+  font-weight: 100;
+  src: local('AppleSDGothicNeoL'),
+    /* computer */ url('../font/AppleSDGothicNeoL.woff2') format('woff2'),
+    /* Modern Browsers */ url('AppleSDGothicNeoL.woff') format('woff'); /* Modern Browsers */
+}
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;600;800&display=swap');
+
+@font-face {
+  font-family: 'BMDOHYEON';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
