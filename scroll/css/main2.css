@@ -138,11 +138,11 @@ table .test td { padding-top: 20px; font-family: 'AppleSDGothicNeo', sans-serif;
  .cjw,
  .tong { margin-bottom: 30px; margin-top: 10px; flex-flow: column nowrap; text-align: left; } 
  #project .mockup_wrap { margin: 60px auto 40px; } 
- #project .section_in .textarea { width: 50%; } 
+ #project .section_in .textarea { width: 80%; } 
  }
 @media (max-width: 640px){
- #project .mockup_wrap { width: 90%; } 
- #project .section_in .textarea { width: 80%; } 
+ #project .mockup_wrap { width: 100%; } 
+ #project .section_in .textarea { width: 100%; } 
  table { font-size: 16px; } 
  #project h1 { font-size: 36px; } 
  #project h2 { font-size: 16px; } 
