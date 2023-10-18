@@ -207,7 +207,7 @@ svg.blob { left: 0; top: 0; transform: translate(-50%, -50%); /* position: absol
 @media (max-width: 1200px) { } 
 
 @media (max-width: 1000px){
- #contact .text_area { width: 72%; flex-flow: column wrap; justify-content: space-evenly; } #contact .text_area li { width: 100%; box-shadow:5px 5px 5px 5px #ae8bf015; border-radius: 15px; padding: 30px 10px 7% 50px; margin-bottom: 30px; } 
+ #contact .text_area { width: 72%; flex-flow: column wrap; justify-content: space-evenly; } #contact .text_area li { width: 100%; box-shadow:5px 5px 5px 5px #ae8bf015; border-radius: 15px; padding: 30px 10px 7% 30px; margin-bottom: 30px; } 
  .text_area li { padding: 20px; } 
  }
 @media (max-width: 640px){
