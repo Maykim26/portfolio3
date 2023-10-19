@@ -104,7 +104,7 @@ marquee { margin: 0 auto; text-align: center; }
 
 
 #project { width: 100%; padding-top: 0px; } 
-#project .section_in { width: 80%; margin: 0 auto; font-family: 'Roboto'; flex-direction: column; display: flex; justify-content: space-between; text-align: left; align-items: center; } #project .section_in > h2{ font-family: 'Roboto'; font-size: 40px; font-family: 800; padding: 70px 0 60px 0; } 
+#project .section_in { width: 80%; margin: 0 auto; font-family: 'Roboto'; flex-direction: column; display: flex; justify-content: space-between; text-align: left; align-items: center; } #project .section_in > h2 { font-family: 'Roboto'; font-size: 40px; font-family: 800; padding: 70px 0 60px 0; } 
 .aesop,
 .cjw { width: 100%; display: flex; justify-content: space-evenly; margin-right: 15%; align-items: center; margin-top: 50px; margin-bottom: 145px; } 
 
@@ -112,13 +112,11 @@ marquee { margin: 0 auto; text-align: center; }
 #project .mockup { background: url(../img/psd-1.jpg) no-repeat center/contain; width: 510px; padding-bottom: 340px; transform: scale(1.2); transition: transform 0.5s ease-out; } 
 #project .mockup_wrap { width: 510px; padding-bottom: 2%; border-radius: 20px; overflow: hidden; box-shadow: 10px 10px 10px #6666665b; } 
 #project .mockup:hover { transform: scale(1.3); } 
-#project .section_in .textarea { width: 400px;} 
+#project .section_in .textarea { width: 400px; } 
 #project .textarea h2 { font-family: 'AppleSDGothicNeo', sans-serif; color: #333333; font-size: 2
-  4px; font-weight: 600; margin: 0 0 15px 0px; } 
-  #project .textarea .first {
-    font-family: 'Roboto'; font-weight: 800;
-  }
-#project h1 { font-size: 14px; font-family: 'AppleSDGothicNeo', sans-serif; font-weight: 400; margin-bottom: 20px; line-height: 1.4;} 
+ 4px; font-weight: 600; margin: 0 0 15px 0px; } 
+ #project .textarea .first { font-family: 'Roboto'; font-weight: 800; } 
+#project h1 { font-size: 14px; font-family: 'AppleSDGothicNeo', sans-serif; font-weight: 400; margin-bottom: 20px; line-height: 1.4; } 
 table { font-size: 20px; width: 100%; font-weight: 300; margin-bottom: 30px; } 
 table th { width: 35%; padding-bottom: 10px; font-weight: 300; } 
 table td { padding-bottom: 10px; width: 65%; } 
@@ -126,7 +124,10 @@ table td { padding-bottom: 10px; width: 65%; }
 table .test th,
 table .test td { padding-top: 20px; font-family: 'AppleSDGothicNeo', sans-serif; font-weight: 200; } 
 
-#project a { display: block; transition: all 0.2s ease-out; width: 90px; height: 40px; line-height: 38px; text-align: center; border-radius: 5px; box-shadow: 2px 2px 2px 2px #66666621; } 
+#project .g_btn {
+  display: flex; 
+}
+#project a { display: block; transition: all 0.2s ease-out; width: 90px; height: 40px; line-height: 38px; text-align: center; border-radius: 5px; box-shadow: 2px 2px 2px 2px #66666621;margin-right: 20px; } 
 #project a:hover { background-color: #b78bf06b; } 
 
 #project .cjw .mockup { background: url(../img/work2.jpg) no-repeat center/contain; } 
@@ -149,7 +150,11 @@ table .test td { padding-top: 20px; font-family: 'AppleSDGothicNeo', sans-serif;
  table { font-size: 16px; } 
  #project h2 { font-size: 24px; } 
  #project h1 { font-size: 14px; } 
- }
+}
+ @media (max-width : 500px){
+ #project .cjw .mockup { background: url(../img/work2.jpg) no-repeat right 60px top 0/contain; } 
+ #project .tong .mockup { background: url(../img/work3.jpg) no-repeat right 60px top 0/contain; } #project .mockup { background: url(../img/psd-1.jpg) no-repeat right 60px top 0/contain; } 
+ } 
 
 
 
@@ -165,13 +170,14 @@ table .test td { padding-top: 20px; font-family: 'AppleSDGothicNeo', sans-serif;
 #clone .site_area li { transform: scale(0.85); } 
 #clone .site_area li.slick-center { transform: scale(1); position: relative; z-index: 50; } 
 #clone .site_area li h3 { font-size: 24px; padding: 20px; display: block; width: 265px; text-align: center; font-weight: bold; font-family: 'Roboto'; } 
-#clone .site_area .s01 h3{  font-family: 'AppleSDGothicNeo', sans-serif; } 
+#clone .site_area .s01 h3 { font-family: 'AppleSDGothicNeo', sans-serif; } 
 #clone .site_area li h3 span { font-size: 15px; margin-left: 10px; color: #666; text-align: center; font-weight: 400; font-family:'AppleSDGothicNeo', sans-serif; } 
-#clone .site_area li h3 span::after { content: ''; display: inline-block; vertical-align: -2.5px; clear: both; width: 12px; height: 12px; background: url(../image/icon/rightarrow.png) no-repeat center/contain; } 
+#clone .site_area li h3 span:hover { color: rgba(89, 0, 255, 0.466); font-weight: 800; } 
+#clone .site_area li h3 span::after { content: ''; display: inline-block;  clear: both; width: 10px; height: 10px; background: url(../image/icon/rightarrow.png) no-repeat center/contain; } 
 .blur { backdrop-filter: blur(25px) contrast(0.6) brightness(1.2) invert(0); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; } 
 
 #clone .section_in { width: 100%; margin: 0 auto; padding-top: 100px; padding-bottom: 100px; flex-direction: column; display: flex; justify-content: space-between; text-align: left; align-items: center; color: #252525; } 
-#clone .section_in h2 , #project .section_in > h2{ font-family: 'Roboto'; font-size: 40px; } 
+#clone .section_in h2 , #project .section_in > h2 { font-family: 'Roboto'; font-size: 40px; } 
 /* clone */
 
 @media (max-width: 1440px) { } 
@@ -187,7 +193,7 @@ table .test td { padding-top: 20px; font-family: 'AppleSDGothicNeo', sans-serif;
  #clone .section_in h2,
  #project .section_in > h2 { font-size: 36px; } 
 
- #clone .site_area li h3 { font-size: 20px; font-weight: 600; text-align: left;} 
+ #clone .site_area li h3 { font-size: 20px; font-weight: 600; text-align: left; } 
  #clone .site_area li h3 span { font-size: 12px; } 
  #clone .site_area li h3 span::after { width: 10px; height: 10px; } 
  }
@@ -218,5 +224,5 @@ svg.blob { left: 0; top: 0; transform: translate(-50%, -50%); /* position: absol
 @media (max-width: 640px){
  #contact h3 { display: block; width: 70%; text-align: center; font-size: 25px; line-height: 1.4; } 
  #contact h2 { font-size: 36px; } 
- svg.blob { width: 100%; } 
+ svg.blob { width: 100%; } #contact .text_area li { width: 100%; box-shadow:2px 2px 3px 3px #ae8bf015; border-radius: 15px; padding: 20px 20px; margin-bottom: 35px; } 
  }

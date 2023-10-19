@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes,shrink-to-fit=no"
+    />
+    <title>Aesop</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/aesop_mf.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/aesop.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header_inner">
+        <div class="h1_wrap">
+          <h1>
+            <a
+              href="#"
+              class="ir_pm"
+              >aesop</a
+            >
+          </h1>
+        </div>
+        <nav>
+          <div class="nav_wrap">
+            <div class="nav_inner">
+              <h2 class="screen_out">네비게이션</h2>
+              <ul class="nav_list">
+                <li><a href="../Aesop/sub1.html">Brand Story</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Store</a></li>
+              </ul>
+            </div>
+            <button
+              class="m_btn"
+              type="button"
+            >
+              <span class="ir_pm">메뉴 열기 버튼</span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="modal"></div>
+          </div>
+        </nav>
+        <nav id="nav_on">
+          <div class="pc_nav_wrap">
+            <div class="pc_nav_inner">
+              <h2 class="screen_out">주요네비게이션</h2>
+
+              <ul class="lnb">
+                <!-- Brand Story -->
+                <li>
+                  <a href="#">Brand Story</a>
+                  <div class="list_wrap">
+                    <ul>
+                      <li><a href="#">브랜드 스토리</a></li>
+                      <li><a href="#">이솝 재단</a></li>
+                      <li><a href="#">채용</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- Product -->
+                <li>
+                  <a href="#">Product</a>
+                  <div class="list_wrap">
+                    <ul>
+                      <li><a href="#">모든 제품</a></li>
+                      <li><a href="#">스킨 케어</a></li>
+                      <li><a href="#">바디&핸드</a></li>
+                      <li><a href="#">홈</a></li>
+                      <li><a href="#">키트&트래블</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- FAQs -->
+                <li>
+                  <a href="#">FAQs</a>
+                  <div class="list_wrap">
+                    <ul>
+                      <li><a href="#">자주 묻는 질문</a></li>
+                      <li><a href="#">주문 및 배송</a></li>
+                      <li><a href="#">반품 및 교환</a></li>
+                      <li><a href="#">결제 및 계정</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <!-- Store -->
+                <li>
+                  <a href="#">Store</a>
+                  <div class="list_wrap">
+                    <ul>
+                      <li><a href="#">매장 찾기</a></li>
+                      <li><a href="#">1:1 상담</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <button
+                class="pc_m_btn"
+                type="button"
+              >
+                <span class="ir_pm">메뉴 열기 버튼</span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="modal"></div>
+            </div>
+            <!-- pc_nav_inner -->
+          </div>
+          <!-- pc_nav_wrap -->
+        </nav>
+      </div>
+    </header>
+    <!-- header -->
+    <div class="visual">
+      <div class="visual_slide_wrap">
+        <ul class="visual_slide">
+          <li class="s01">
+            <div class="visual_box">
+              <h3>새롭게 그려낸,<br />클래식 바디케어</h3>
+              <p>
+                평범한 비누에 새로운 활력을 불어넣은<br />
+                바디 케어 레인저의 신제품 3종을 소개합니다.
+              </p>
+            </div>
+          </li>
+          <!-- 01 -->
+          <li class="s02">
+            <div class="visual_box">
+              <h3>새롭게 그려낸,<br />클래식 바디케어222</h3>
+              <p>
+                평범한 비누에 새로운 활력을 불어넣은<br />바디 케어 레인저의
+                신제품 3종을 소개합니다.
+              </p>
+            </div>
+          </li>
+          <!-- 02 -->
+          <li class="s03">
+            <div class="visual_box">
+              <h3>새롭게 그려낸,<br />클래식 바디케어333</h3>
+              <p>
+                평범한 비누에 새로운 활력을 불어넣은<br />바디 케어 레인저의
+                신제품 3종을 소개합니다.
+              </p>
+            </div>
+          </li>
+          <!-- 03 -->
+        </ul>
+      </div>
+    </div>
+    <!-- visual -->
+    <main>
+      <section id="product">
+        <div class="product_content">
+          <h2 class="screen_out">product</h2>
+          <div class="product_wrap_head">
+            <h3>Product <span class="arrow_btn"></span></h3>
+            <p>감각적인 즐거움을 선사하는<br />스킨, 헤어, 바디 케어 제품</p>
+          </div>
+          <!-- product_text -->
+          <div class="product_list_content">
+            <div class="product_item_01">
+              <span></span>
+              <div class="product_content_text">
+                <strong>바디</strong>
+                <p>
+                  각 제품의 독특한 기분 좋은 아로마가<br />감각적인 즐거움을
+                  선사
+                </p>
+                <a href="#">자세히보기</a>
+              </div>
+            </div>
+            <div class="product_item_02">
+              <span></span>
+              <div class="product_content_text">
+                <strong>선 케어 및 SPF</strong>
+                <p>
+                  자외선 차단과 수분을 공급하고<br />
+                  부드러운 피부를 위해 영양을 공급
+                </p>
+                <a href="#">자세히보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- product -->
+      <section id="aesop_info">
+        <div class="aesop_info_content">
+          <h2 class="screen_out">aesop_info</h2>
+          <div class="aesop_info_text">
+            <p>
+              이솝은 제품 연구 및 개발에 매우<br />독특한 방식을 유지해 왔습니다
+            </p>
+            <p>
+              화학자들은 본사에 위치한<br />실용적이고 맞춤화되어 있는<br />연구소에서
+              제품 아이디어를 내고
+            </p>
+            <p>배합에 대해 연구하고<br />견본을 제작합니다</p>
+          </div>
+        </div>
+      </section>
+      <!-- aesop_info -->
+      <section id="read">
+        <div class="read_content">
+          <h2 class="screen_out">read</h2>
+          <div class="read_wrap">
+            <div class="read_content_item">
+              <div class="home">
+                <strong>홈</strong>
+                <p>실내공간을 한층 풍성하게</p>
+                <a href="#">더 읽기</a>
+              </div>
+              <div class="gift">
+                <strong>기프트 파인더</strong>
+                <p>받는 대상을 고려한<br />이솝의 기프트 셀렉션</p>
+                <a href="#">더 읽기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- read -->
+      <section id="athenaeum">
+        <div class="athenaeum_content">
+          <h2 class="screen_out">athenaeum</h2>
+          <div class="athenaeum_wrap_head">
+            <h3>더 아테네움 <span class="arrow_btn"></span></h3>
+
+            <p>새로운 소식들과 다양한 팁</p>
+          </div>
+          <!-- Athenaeum_text -->
+          <div class="athenaeum_content_item">
+            <ul class="athenaeum_content_list">
+              <li class="A01">
+                <div class="athenaeum_box"></div>
+                <p>Podcast</p>
+                <strong>라디오마티크의 미래 우화</strong>
+              </li>
+              <li class="A02">
+                <div class="athenaeum_box"></div>
+                <p>Lessons from the lab</p>
+                <strong>페이셜 세럼 가이드</strong>
+              </li>
+              <li class="A03">
+                <div class="athenaeum_box"></div>
+                <p>Habitat</p>
+                <strong>홈 프래그런스 가이드</strong>
+              </li>
+              <li class="A04">
+                <div class="athenaeum_box"></div>
+                <p>Essay</p>
+                <strong>하비스트 캠페인</strong>
+              </li>
+              <li class="A05">
+                <div class="athenaeum_box"></div>
+                <p>Culture</p>
+                <strong>정원에서의 사색</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Athenaeum -->
+      <section id="locator">
+        <div class="locator_wrap">
+          <h2>Store Locator</h2>
+          <a href="#">가까운 스토어 찾기</a>
+        </div>
+      </section>
+      <!-- locator -->
+    </main>
+    <footer>
+      <div class="footer_wrap">
+        <div class="footer_inner">
+          <a
+            href="#"
+            class="ir_pm"
+            >aesop</a
+          >
+        </div>
+
+        <div class="footer_icon">
+          <div class="contact">
+            <b>Contact</b>
+            <div class="icon_box">
+              <a
+                href="#"
+                class="ir_pm"
+                >call</a
+              >
+              <a
+                href="#"
+                class="ir_pm"
+                >message</a
+              >
+              <a
+                href="#"
+                class="ir_pm"
+                >kakao talk</a
+              >
+            </div>
+          </div>
+          <div class="social">
+            <b>Social</b>
+            <div class="icon_box">
+              <a
+                href="#"
+                class="ir_pm"
+                >facebook</a
+              >
+              <a
+                href="#"
+                class="ir_pm"
+                >instagram</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- footer_icon -->
+        <div class="footer_inner_content">
+          <p>
+            프레데리크미셸어완세일러
+
+            <br />
+            © Aesop, INC. ALL RIGHTS RESERVED
+          </p>
+        </div>
+        <!-- footer_inner_content -->
+      </div>
+      <a
+        href="#"
+        class="top_btn ir_pm"
+      >
+        탑으로가기
+      </a>
+      <!-- footer_wrap -->
+    </footer>
+
+    <script>
+      // var responsiveNav;
+      // var slideDownPc;
+      // slideDownPc = function () {
+      //   $('.lnb>li>a').on('click', function () {
+      //     $(this).next('div').stop().slideToggle();
+      //     $(this).toggleClass('active');
+      //   });
+      // };
+
+      // responsiveNav = function () {
+      //   var windowWidth = $(window).width();
+      //   if (windowWidth < 768) {
+      //     slideDownPc();
+      //   } else if (windowWidth < 1025) {
+      //     slideDownPc();
+      //   } else {
+      //     $('.lnb>li>a').off('click');
+      //     $('.lnb>li').on('hover');
+      //     $('.lnb>li').hover(function () {
+      //       $(this).children('div').stop().slideToggle('fast');
+      //     });
+      //   }
+      // };
+      // $(window).on('ready load resize orientationchange', function () {
+      //   responsiveNav();
+      // });
+      // $(function () {
+      //   window.onresize = function () {
+      //     document.location.reload();
+      //   };
+      // }); -->
+
+      // function navWrapFront() {
+      //   $('.nav_list').stop().animate(
+      //     {
+      //       right: '0',
+      //     },
+      //     500
+      //   );
+      // }
+
+      // function navWrapBack() {
+      //   $('.nav_list').stop().animate(
+      //     {
+      //       right: '-100%',
+      //     },
+      //     500
+      //   );
+      // }
+      // $('.m_btn').click(function () {
+      //   if ($(this).hasClass('active')) {
+      //     $(this).removeClass('active').stop().animate({
+      //       left: '93%',
+      //     });
+      //     navWrapBack();
+      //     $('.modal').hide();
+      //   } else {
+      //     $(this).addClass('active').stop().animate({
+      //       left: '93%',
+      //     });
+      //     navWrapFront();
+      //     $('.modal').show();
+      //   }
+      // });
+      //     $(function () {
+      //   var mNavMove = 1;
+      //   $('.m_btn').click(function () {
+      //     if (mNavMove === 1) {
+      //       $('.nav_wrap').animate(
+      //         {
+      //           left: '0%',
+      //         },
+      //         500,
+      //         'easeInOutBack'
+      //       );
+      //       setTimeout(function () {
+      //         $('.modal').show();
+      //       }, 200);
+      //       mNavMove = 0;
+      //     } else {
+      //       $('.nav_wrap').animate(
+      //         {
+      //           left: '-60%',
+      //         },
+      //         500,
+      //         'easeInOutBack'
+      //       );            setTimeout(function () {
+      //         $('.modal').hide();
+      //       }, 100);
+      //       mNavMove = 1;
+      //     }
+      //   }); //click
+      // });
+      //
+      //
+    </script>
+    <!-- footer -->
+  </body>
+</html>
