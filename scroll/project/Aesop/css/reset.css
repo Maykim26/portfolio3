@@ -1,0 +1,39 @@
+@charset "utf-8";* { margin: 0; padding: 0; box-sizing: border-box; } 
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html { font-size: 0.625em; line-height: 1.15; /* 1 */
+ -webkit-text-size-adjust: 100%; /* 2 */}
+
+body { font-family: 'Roboto', sans-serif; font-family: 'AppleSDGothicNeo', sans-serif; line-height: 1; color: #252525; word-break: keep-all; } 
+
+a { color: #333; text-decoration: none; } 
+
+li { list-style: none; } 
+
+/*global_class*/
+
+.clearfix:after { content: ''; display: block; clear: both; } 
+
+.modal { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(129, 129, 129, 0.5); display: none; z-index: 99; } 
+/* block으로 바꿔야 적용됨 */
+.ir_pm { text-indent: -9999em; white-space: nowrap; overflow: hidden; } 
+/* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+
+.screen_out { position: absolute; top: -9999em; left: -9999em; } 
+
+button { background-color: transparent; cursor: pointer; outline: none; } 
+
+/* margin error 해결 */
+.parents::after,
+.parents::before { content: ''; display: table; } 
+.clearfix::after { content: ''; clear: both; display: block; } 
+html,
+body { position: relative; height: 100%; } 
+.swiper-container { width: 100%; height: 100%; } 
+.swiper-slide { text-align: center; font-size: 18px; background: #fff; /* Center slide text vertically */
+ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; } 
+.blob { position: fixed; top: 0; } 
+.inner { width: 100%; height: 100%; position: fixed; left: 0; top: 0; } 
