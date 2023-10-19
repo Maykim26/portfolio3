@@ -1,87 +1,33 @@
-@charset "utf-8";
-@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-@font-face {
-  font-family: nbgR;
-  src: url(../fonts/NanumBarunGothic.eot);
-  src: url(../fonts/NanumBarunGothic.woff) format('woff');
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@charset "utf-8";@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);@font-face { font-family: nbgR; src: url(../fonts/NanumBarunGothic.eot); src: url(../fonts/NanumBarunGothic.woff) format('woff'); } 
+* { margin: 0; padding: 0; box-sizing: border-box; } 
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
-  font-size: 0.625em;
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
+html { font-size: 0.625em; line-height: 1.15; /* 1 */
+ -webkit-text-size-adjust: 100%; /* 2 */}
 
-body {
-  font-family: 'Spoqa Han Sans';
-  word-break: keep-all; 
-  line-height: 1;
-}
+body { font-family: 'Spoqa Han Sans'; word-break: keep-all; line-height: 1; overscroll-behavior : contain; } 
 
-a {
-  color: #333;
-  text-decoration: none;
-}
+a { color: #333; text-decoration: none; } 
 
-li {
-  list-style: none;
-}
+li { list-style: none; } 
 
 /*global_class*/
 
-.clearfix:after {
-  content: '';
-  display: block;
-  clear: both;
-}
+.clearfix:after { content: ''; display: block; clear: both; } 
 
-.modal {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: none;
-  z-index: 99;
-}
+.modal { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); display: none; z-index: 99; } 
 /* block으로 바꿔야 적용됨 */
-.ir_pm {
-  text-indent: -9999em;
-  white-space: nowrap;
-  overflow: hidden;
-}
+.ir_pm { text-indent: -9999em; white-space: nowrap; overflow: hidden; } 
 /* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
 
-.screen_out {
-  position: absolute;
-  top: -9999em;
-  left: -9999em;
-}
+.screen_out { position: absolute; top: -9999em; left: -9999em; } 
 
-button {
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
-}
+button { background-color: transparent; cursor: pointer; outline: none; } 
 
 /* margin error 해결 */
 .parents::after,
-.parents::before {
-  content: '';
-  display: table;
-}
-.clearfix::after {
-  content: '';
-  clear: both;
-  display: block;
-}
+.parents::before { content: ''; display: table; } 
+.clearfix::after { content: ''; clear: both; display: block; } 
