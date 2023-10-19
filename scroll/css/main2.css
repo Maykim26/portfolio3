@@ -164,8 +164,8 @@ table .test td { padding-top: 20px; font-family: 'AppleSDGothicNeo', sans-serif;
 #clone .site_area { width: 80%; padding-bottom: 10%; display: flex; flex-direction: row; flex-wrap: nowrap; align-content: space-around; justify-content: space-around; align-items: center; padding-top: 30px; } 
 #clone .site_area li { transform: scale(0.85); } 
 #clone .site_area li.slick-center { transform: scale(1); position: relative; z-index: 50; } 
-#clone .site_area li h3 { font-size: 24px; padding: 20px; display: block; width: 315px; text-align: center; font-weight: bold; font-family: 'Roboto'; } 
-#clone .site_area .s01 {  font-family: 'AppleSDGothicNeo', sans-serif; } 
+#clone .site_area li h3 { font-size: 24px; padding: 20px; display: block; width: 265px; text-align: center; font-weight: bold; font-family: 'Roboto'; } 
+#clone .site_area .s01 h3{  font-family: 'AppleSDGothicNeo', sans-serif; } 
 #clone .site_area li h3 span { font-size: 15px; margin-left: 10px; color: #666; text-align: center; font-weight: 400; font-family:'AppleSDGothicNeo', sans-serif; } 
 #clone .site_area li h3 span::after { content: ''; display: inline-block; vertical-align: -2.5px; clear: both; width: 12px; height: 12px; background: url(../image/icon/rightarrow.png) no-repeat center/contain; } 
 .blur { backdrop-filter: blur(25px) contrast(0.6) brightness(1.2) invert(0); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; } 
@@ -187,7 +187,7 @@ table .test td { padding-top: 20px; font-family: 'AppleSDGothicNeo', sans-serif;
  #clone .section_in h2,
  #project .section_in > h2 { font-size: 36px; } 
 
- #clone .site_area li h3 { font-size: 20px; font-weight: 600; } 
+ #clone .site_area li h3 { font-size: 20px; font-weight: 600; text-align: left;} 
  #clone .site_area li h3 span { font-size: 12px; } 
  #clone .site_area li h3 span::after { width: 10px; height: 10px; } 
  }
