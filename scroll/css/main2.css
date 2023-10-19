@@ -157,7 +157,7 @@ table .test td { padding-top: 20px; font-family: 'AppleSDGothicNeo', sans-serif;
 
 #clone .image { box-shadow: 10px 10px 10px #66666683; border-radius: 15px; padding-bottom: 130%; } 
 #clone .s01 .image { background: url(../image/hd.jpg) no-repeat center/cover; } 
-#clone .s03 .image { background: url(../image/food.jpg) no-repeat center/cover; } 
+#clone .s03 .image { background: url(../image/hp.jpg) no-repeat right 0 top 0/cover; } 
 #clone .s02 .image { background: url(../image/dalba.jpg) no-repeat right 0 bottom 34%/cover; } 
 
 #clone { background: url(../image/clone.png) no-repeat left/contain; z-index: 80; } 
